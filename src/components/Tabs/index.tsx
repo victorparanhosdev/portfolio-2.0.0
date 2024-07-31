@@ -1,22 +1,18 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import * as Tabs from '@radix-ui/react-tabs';
-import { tv } from 'tailwind-variants';
+import { TabItem } from './TabItem';
 
 
-const tabsStyles = tv({
-  base: 'rounded-r-md text-start w-full border-l-2 border-l-dark-30 block py-4 px-9 data-[state="active"]:border-l-2 data-[state="active"]:border-l-brand-color data-[state="active"]:bg-dark-20',
+export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
+  const [currentTab, setCurrentTab] = useState<string>('stefanini')
 
-})
-
-
-
-export const TabsNav = ({ ...props }: Tabs.TabsProps) => (
-  <Tabs.Root {...props} className={`flex gap-24 min-w-52 ${props.className}`}>
-    <Tabs.List className='' >
-      <Tabs.Trigger className={tabsStyles()} value="stefanini">Stefanini</Tabs.Trigger>
-      <Tabs.Trigger className={tabsStyles()} value="vtrina">Vtrina</Tabs.Trigger>
-      <Tabs.Trigger className={tabsStyles()} value="dires">Dires</Tabs.Trigger>
+  return(
+    <Tabs.Root value={currentTab} onValueChange={setCurrentTab} {...props} className={`flex gap-24 min-w-52 ${props.className}`}>
+    <Tabs.List >
+      <TabItem isSelected={currentTab === 'stefanini'} title='Stefanini' value="stefanini"/>
+      <TabItem isSelected={currentTab === 'vtrina'} title='Vtrina' value="vtrina"/>
+      <TabItem isSelected={currentTab === 'dires'} title='Dires' value="dires"/>
     </Tabs.List>
     <div>
       <Tabs.Content value="stefanini">
@@ -53,5 +49,5 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => (
 
     </div>
   </Tabs.Root>
-);
-
+  )
+}

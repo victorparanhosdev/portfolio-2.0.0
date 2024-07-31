@@ -2,7 +2,7 @@
 
 import { Element } from "react-scroll"
 import { Button } from "../Button"
-import { MapPinSimpleArea } from "@phosphor-icons/react"
+import { MapPin} from "@phosphor-icons/react"
 
 
 export const About = () => {
@@ -10,9 +10,9 @@ export const About = () => {
         <Element name="about" className="element">
             <section data-aos="fade-up" className="container py-24">
                 <h1 className="text-3xl font-preahvihear text-brand-color mb-5">Sobre mim</h1>
-                <div className="mb-6 flex items-center gap-4">
+                <div className="mb-6 flex align-baseline gap-4">
                 <h2 className="text-lg font-medium ">Cruz das Almas, BA </h2>
-                <MapPinSimpleArea size={24} />
+                <MapPin size={24} weight="fill" />
 
                 </div>
 

@@ -41,8 +41,8 @@ export const Home = () => {
 
           
             </div>
-            <div className="h-80 w-80 flex items-center mr-20">
-            <Image priority width={460} height={460} src="http://github.com/victorparanhosdev.png" className="rounded-full overflow-hidden shadow-brand-shadow shadow-brand-color" alt="Foto de Perfil" />
+            <div className="relative h-80 w-80 flex items-center mr-20 before:content-[''] before:absolute before:block before:shadow-brand-shadow before:shadow-brand-color before:inset-0 before:rounded-full before:blur-2xl">
+            <Image priority width={460} height={460} src="http://github.com/victorparanhosdev.png" className="rounded-full  w-full object-cover" alt="Foto de Perfil" />
             
             </div>
 
