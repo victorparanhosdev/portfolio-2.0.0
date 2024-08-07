@@ -27,3 +27,10 @@
   background: var(--root-color);
   border-radius: 1rem;
 }
+
+.container-personalizado {
+  width: min(100%, 1218px);
+  padding-inline: 2rem;
+  margin: auto;
+
+}

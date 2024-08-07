@@ -29,7 +29,7 @@ export const Header = () => {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <nav className="flex items-center justify-between container ">
+        <nav className="flex items-center justify-between container">
             <h1 className="text-brand-color text-2xl font-preahvihear ">VP</h1>
             <menu>
                 <DialogMenu className="md:hidden text-brand-color hover:text-brand-hover transition-all" getOpen={setOpen}><Hamburger size={32} toggled={isOpen} toggle={setOpen} /></DialogMenu>

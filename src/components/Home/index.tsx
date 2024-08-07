@@ -7,13 +7,13 @@ import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo, WhatsappLogo, XL
 export const Home = () => {
     return(
         <Element name="home" className="element bg-dark-10 gap-2 grid">
-        <section className="transition-all container pt-28 py-10 md:py-24 relative">
-            <div data-aos="fade-up"  className="grid gap-4 place-items-center md:flex md:items-center md:justify-between">
+        <section className="transition-all container-personalizado pt-[88px] pb-10 md:py-24 relative">
+            <div data-aos="fade-up" className="w-full min-h-homescreen md:min-h-max flex flex-col md:flex-row gap-4 place-items-center items-center md:justify-between justify-center">
 
             <div className="grid order-2 md:justify-items-startc place-items-center text-center md:text-start md:place-items-baseline">
             <h1 className="text-2xl font-medium mb-2">Olá, eu sou</h1>
             <p className="text-brand-color text-3xl md:text-6xl font-preahvihear mb-4">Victor Paranhos</p>
-            <div className="text-lg">
+            <div className="text-lg min-h-14">
 
             <Typewriter
             words={['Desenvolvedor FullStack', 'Graduado em Ánalise e Desenvolvimento de Sistemas']}
@@ -26,6 +26,8 @@ export const Home = () => {
 
 
           />
+    
+
           
           
             </div>
