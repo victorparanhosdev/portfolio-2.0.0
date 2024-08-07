@@ -1,18 +1,18 @@
 'use client'
-import { Element, Link } from "react-scroll"
+import { Element} from "react-scroll"
 import Image from "next/image"
 import { Typewriter } from 'react-simple-typewriter'
-import { CaretDoubleDown, FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo, WhatsappLogo, XLogo } from "@phosphor-icons/react"
+import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo, WhatsappLogo, XLogo } from "@phosphor-icons/react"
 
 export const Home = () => {
     return(
         <Element name="home" className="element bg-dark-10 gap-2 grid">
-        <section className=" transition-all container sm:py-24 relative">
-            <div data-aos="fade-up"  className="flex items-center justify-between">
+        <section className="transition-all container pt-28 py-10 md:py-24 relative">
+            <div data-aos="fade-up"  className="grid gap-4 place-items-center md:flex md:items-center md:justify-between">
 
-            <div className="grid justify-items-start">
+            <div className="grid order-2 md:justify-items-startc place-items-center text-center md:text-start md:place-items-baseline">
             <h1 className="text-2xl font-medium mb-2">Olá, eu sou</h1>
-            <p className="text-brand-color text-6xl font-preahvihear mb-4">Victor Paranhos</p>
+            <p className="text-brand-color text-3xl md:text-6xl font-preahvihear mb-4">Victor Paranhos</p>
             <div className="text-lg">
 
             <Typewriter
@@ -41,14 +41,14 @@ export const Home = () => {
 
           
             </div>
-            <div className="relative h-80 w-80 flex items-center mr-20 before:content-[''] before:absolute before:block before:shadow-brand-shadow before:shadow-brand-color before:inset-0 before:rounded-full before:blur-2xl">
-            <Image priority width={460} height={460} src="http://github.com/victorparanhosdev.png" className="rounded-full  w-full object-cover" alt="Foto de Perfil" />
+
+            <div className="order-1 md:order-2 relative w-48 md:h-80 md:w-80 flex items-center md:mr-20 before:content-['']  before:absolute before:block before:shadow-brand-shadow before:shadow-brand-color before:inset-0 before:rounded-full before:blur-2xl">
+            <Image priority width={460} height={460} src="http://github.com/victorparanhosdev.png" className="rounded-full w-full object-cover" alt="Foto de Perfil" />
             
             </div>
 
 
             </div>
-            <Link activeClass="active" className="about cursor-pointer sm:hidden flex justify-center" to="about" spy={true} smooth={true} duration={500}><CaretDoubleDown className="text-brand-color animate-bounce overflow-hidden" size={32} /></Link> 
 
         </section>
    
