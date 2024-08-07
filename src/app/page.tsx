@@ -19,7 +19,7 @@ export default function HomePage() {
   useEffect(() => {
     setTimeout(()=> {
       setLoading(true)
-    },1000)
+    },800)
 
     AOS.init({
       easing: "linear",
@@ -35,7 +35,7 @@ export default function HomePage() {
 
   return (
     <>
-      <header className="fixed py-2 w-full min-h-[70px] md:relative z-20 border-b-2 border-dark-30 bg-dark-10 shadow-2xl flex items-center">
+      <header className="w-full fixed top-0 py-2 md:relative z-20 border-b-2 border-dark-30 bg-dark-10 shadow-2xl flex items-center min-h-[70px]">
         <Header />
       </header>
       <main className="grid">

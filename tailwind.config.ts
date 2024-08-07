@@ -24,8 +24,7 @@ const config: Config = {
           20: '#0E0E0E',
           30: '#151515',
           40: '#FFFFFF'
-        },
-      
+        }, 
 
       },
       boxShadow: {
@@ -59,7 +58,11 @@ const config: Config = {
         overlayShow: 'overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         contentShow: 'contentShow 350ms cubic-bezier(0.16, 1, 0.3, 1)',
       },
+      minHeight: {
+        'homescreen': 'calc((100vh - 128px))'
+      }
     },
+  
   },
   plugins: [],
 };

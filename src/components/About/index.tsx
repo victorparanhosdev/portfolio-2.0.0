@@ -8,7 +8,7 @@ import { MapPin} from "@phosphor-icons/react"
 export const About = () => {
     return (
         <Element name="about" className="element">
-            <section data-aos="fade-up" className="container py-24">
+            <section data-aos="fade-up" className="container-personalizado py-24">
                 <h1 className="text-3xl font-preahvihear text-brand-color mb-5">Sobre mim</h1>
                 <div className="mb-6 flex align-baseline gap-4">
                 <h2 className="text-lg font-medium ">Cruz das Almas, BA </h2>
