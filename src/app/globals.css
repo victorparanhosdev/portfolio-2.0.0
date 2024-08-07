@@ -30,7 +30,7 @@
 
 .container-personalizado {
   width: min(100%, 1218px);
-  padding-inline: 2rem;
+  padding-inline: 16px;
   margin: auto;
 
 }
