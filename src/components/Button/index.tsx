@@ -11,7 +11,7 @@ type ButtonProps = ComponentProps<'button'> & {
 
  
 const button = tv({
-  base: 'text-base font-medium rounded-md py-2.5 px-10 active:opacity-80 hover:bg-brand-hover border border-brand-color transition',
+  base: 'sm:text-base text-sm w-full sm:w-auto white-space font-medium rounded-md py-[12px] sm:py-2.5 px-2.5 sm:px-10 active:opacity-80 hover:bg-brand-hover border border-brand-color transition',
   variants: {
     state: {
       primary: 'bg-brand-color text-dark-10',

@@ -33,7 +33,7 @@ const config: Config = {
 
       },
       gridTemplateRows: {
-        layout: 'auto 1fr auto'
+        layout: '70px 1fr auto'
       },
       gridTemplateColumns:{
         projects: 'repeat(auto-fit, minmax(500px, 1fr))'
@@ -44,9 +44,24 @@ const config: Config = {
         screens: {
           "2xl": "1218px",
         },
-      }
+      },
+      keyframes: {
+        overlayShow: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        contentShow: {
+          from: { opacity: '0', transform: 'translateX(-150%)' },
+          to: { opacity: '1', transform: 'translateX(0%) scale(1)' },
+        },
+      },
+      animation: {
+        overlayShow: 'overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
+        contentShow: 'contentShow 350ms cubic-bezier(0.16, 1, 0.3, 1)',
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

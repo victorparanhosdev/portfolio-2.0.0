@@ -22,16 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${preahvihear.variable} ${inter.className} bg-dark-30 text-dark-40 grid grid-rows-layout`}>
-        <header className="py-4 border-b-2 border-dark-30 bg-dark-10 shadow-2xl">
-          <Header />
-        </header>
+      <body className={`${preahvihear.variable} ${inter.className} bg-dark-30 text-dark-40 grid md:grid-rows-layout`}>
         {children}
-        <footer className="bg-dark-10">
-          <Footer/>
-        </footer>
-        <ScrollToTop />
-
       </body>
     </html>
   );
