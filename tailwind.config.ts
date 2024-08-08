@@ -37,13 +37,6 @@ const config: Config = {
       gridTemplateColumns:{
         projects: 'repeat(auto-fit, minmax(460px, 1fr))'
       },
-      container: {
-        center: true,
-        padding: '1rem',
-        screens: {
-          "2xl": "1218px",
-        },
-      },
       keyframes: {
         overlayShow: {
           from: { opacity: '0' },

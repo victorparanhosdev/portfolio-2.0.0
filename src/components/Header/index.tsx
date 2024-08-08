@@ -1,7 +1,6 @@
 'use client'
 
 import { Link } from "react-scroll";
-import DialogMenu from "../Dialog";
 import { Divide as Hamburger } from 'hamburger-react'
 import { useState } from "react";
 import { PopoverMenu } from "../Popover";

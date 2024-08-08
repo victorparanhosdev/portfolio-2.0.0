@@ -12,7 +12,7 @@ interface PopoverProps extends ComponentProps<'button'>{
   export const PopoverMenu = forwardRef<HTMLButtonElement, PopoverProps>(
     ({ children, getOpen, ...props}, ref: ForwardedRef<HTMLButtonElement>) => {
       const [isOpen, setOpen] = useState(false);
-      console.log(isOpen)
+
       function getBooleanOpen() {
         const newOpenState = !isOpen;
         setOpen(newOpenState);
