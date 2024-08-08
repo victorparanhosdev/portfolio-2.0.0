@@ -1,5 +1,4 @@
 'use client'
-import { X } from '@phosphor-icons/react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { Dispatch, ReactNode, SetStateAction, useState, forwardRef, ForwardedRef, ComponentProps } from 'react';
 import { links } from '../Header';
@@ -28,11 +27,11 @@ export const DialogMenu = forwardRef<HTMLButtonElement, DialogMenuProps>(
           </button>
         </Dialog.Trigger>
         <Dialog.Portal >
-          <Dialog.Overlay className="md:hidden bg-[#000000b0] data-[state=open]:animate-overlayShow fixed inset-0 z-30" />
-          <Dialog.Content className="z-40 md:hidden data-[state=open]:animate-contentShow fixed rounded-[6px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none bg-black h-full border-r border-brand-color">
+          <Dialog.Overlay className="bg-[#00000062] data-[state=open]:animate-overlayShow fixed inset-0 z-30" />
+          <Dialog.Content className="z-40 top-[68px] right-0 data-[state=open]:animate-contentShow fixed shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none bg-black border-l border-b border-brand-color rounded-bl-xl">
             <Dialog.Title className="sr-only"/>
             <Dialog.Description className="sr-only"/>
-            <ul className="grid gap-4 p-6 text-white text-md  ">
+            <ul className="grid gap-4 p-6 text-white text-md">
                     {links.map((item) => {
                         return (
                             <li key={item.title} className=" transition-colors cursor-pointer hover:text-brand-color p-4"><Link activeClass="active" className={item.link} onClick={getBooleanOpen} to={item.link} spy={true} smooth={true} duration={500}>{item.title}</Link></li>

@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${preahvihear.variable} ${inter.className} bg-dark-30 text-dark-40 grid md:grid-rows-layout`}>
+      <body className={`${preahvihear.variable} ${inter.className} bg-dark-30 text-dark-40`}>
         {children}
       </body>
     </html>

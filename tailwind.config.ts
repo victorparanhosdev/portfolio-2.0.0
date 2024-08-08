@@ -35,7 +35,7 @@ const config: Config = {
         layout: '70px 1fr auto'
       },
       gridTemplateColumns:{
-        projects: 'repeat(auto-fit, minmax(500px, 1fr))'
+        projects: 'repeat(auto-fit, minmax(460px, 1fr))'
       },
       container: {
         center: true,
@@ -50,13 +50,18 @@ const config: Config = {
           to: { opacity: '1' },
         },
         contentShow: {
-          from: { opacity: '0', transform: 'translateX(-150%)' },
+          from: { opacity: '0', transform: 'translateX(150%)' },
           to: { opacity: '1', transform: 'translateX(0%) scale(1)' },
+        },
+        slideDownAndFade: {
+          from: { opacity: '0', transform: 'translateX(100px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
         },
       },
       animation: {
         overlayShow: 'overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         contentShow: 'contentShow 350ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideDownAndFade: 'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
       },
       minHeight: {
         'homescreen': 'calc((100vh - 128px))'

@@ -5,7 +5,8 @@
 :root {
   --var-color: 267;
   --brand-color: hsl(var(--var-color), 90%, 77%);
-  --brand-hover: hsl(var(--var-color), 90%, 73%)
+  --brand-hover: hsl(var(--var-color), 90%, 73%);
+  --brand-loading: hsl(var(--var-color), 57.01% 58.04%);;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +31,7 @@
 
 .container-personalizado {
   width: min(100%, 1218px);
-  padding-inline: 16px;
+  padding-inline: 1.5rem;
   margin: auto;
 
 }

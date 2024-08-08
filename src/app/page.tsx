@@ -25,7 +25,8 @@ export default function HomePage() {
       easing: "linear",
       once: false,
       offset: 0,
-      duration: 1000,
+      duration: 500,
+      
     });
   }, []);
 
@@ -35,18 +36,14 @@ export default function HomePage() {
 
   return (
     <>
-      <header className="w-full fixed top-0 py-2 md:relative z-20 border-b-2 border-dark-30 bg-dark-10 shadow-2xl flex items-center min-h-[70px]">
-        <Header />
-      </header>
-      <main className="grid">
+      <Header />
+      <main className="flex flex-col">
         <Home />
         <About />
         <Experience />
         <Projects />
       </main>
-      <footer className="bg-dark-10">
-        <Footer />
-      </footer>
+      <Footer />
       <ScrollToTop />
     </>
 
