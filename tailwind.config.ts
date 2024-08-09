@@ -6,19 +6,32 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
+    
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "linear-victor": 'linear-gradient(190deg, #96c7e0, #3661a6);'
       },
       fontFamily:{
         'preahvihear': 'var(--font-preahvihear)'
       },
       colors: {
+        'victor':{
+          '100': 'var(--victor-bg-100)',
+          '200': 'var(--victor-header-200)',
+          '300': 'var(--victor-text-300)',
+          '400': 'var(--victor-text-400)',
+          '500': 'var(--victor-menu-500)',
+          '600': 'var(--victor-button-600)',
+          '700': 'var(--victor-button-text-700)'
+        },
         'brand-color': 'var(--brand-color)',
         'brand-hover':'var(--brand-hover)',
+        'brand-light':'var(--brand-light)',
         'dark': {
           10: '#0B0B0B',
           20: '#0E0E0E',
@@ -35,7 +48,7 @@ const config: Config = {
         layout: '70px 1fr auto'
       },
       gridTemplateColumns:{
-        projects: 'repeat(auto-fit, minmax(460px, 1fr))'
+        projects: 'repeat(auto-fit, minmax(300px, 1fr))'
       },
       keyframes: {
         overlayShow: {
@@ -58,7 +71,8 @@ const config: Config = {
       },
       minHeight: {
         'homescreen': 'calc((100vh - 128px))'
-      }
+      },
+      
     },
   
   },

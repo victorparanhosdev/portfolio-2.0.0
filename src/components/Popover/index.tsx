@@ -31,10 +31,10 @@ interface PopoverProps extends ComponentProps<'button'>{
             className="PopoverContent rounded-bl-xl rounded-tl-xl backdrop-blur-xl bg-black/80 data-[state=open]:animate-slideDownAndFade z-50"
             sideOffset={5}
           >
-        <ul className="grid text-white text-md text-center divide-y-[1px] divide-brand-color">
+        <ul className="grid text-md text-center divide-y-[1px] divide-transparent">
                     {links.map((item) => {
                         return (
-                            <li key={item.title} className="transition-colors cursor-pointer hover:text-brand-color p-4 text-lg"><Link activeClass="active" className={item.link} to={item.link} onClick={getBooleanOpen} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
+                            <li key={item.title} className="transition-colors cursor-pointer dark:hover:text-victor-400 p-2 text-lg"><Link activeClass="active" className={item.link} to={item.link} onClick={getBooleanOpen} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
                         )
                     })}
                 </ul>

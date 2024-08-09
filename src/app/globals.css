@@ -6,7 +6,24 @@
   --var-color: 267;
   --brand-color: hsl(var(--var-color), 90%, 77%);
   --brand-hover: hsl(var(--var-color), 90%, 73%);
-  --brand-loading: hsl(var(--var-color), 57.01% 58.04%);;
+  --brand-light: hsl(var(--var-color), 72%, 42%);
+  --brand-loading: hsl(var(--var-color), 57.01% 58.04%);
+  --gray-500: #ffffff12;
+  --gray-400: #d1d5db;
+  --gray-300: #ffffff1c;
+  --gray-600: #1f2937;
+
+  --victor-bg-100: #121212;
+  --victor-header-200: #ffffff12;
+  --victor-text-300: #ffffff99;
+  --victor-text-400: #ffffffde;
+  --victor-menu-500: #d1d5db;
+
+  --victor-button-600: #41bbff;
+  --victor-button-text-700: #121212;
+
+
+
 }
 
 ::-webkit-scrollbar {
@@ -16,22 +33,19 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--brand-color);
+  background: var(--victor-button-600);
   border-radius: 2rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--brand-hover);
+  opacity: 0.8;
 }
 
-::-webkit-scrollbar-corner {
-  background: var(--root-color);
-  border-radius: 1rem;
-}
+
 
 .container-personalizado {
   width: min(100%, 1218px);
-  padding-inline: 1.5rem;
+  padding-inline: 1rem;
   margin: auto;
 
 }

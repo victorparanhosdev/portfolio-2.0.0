@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import ScrollToTop from '@/components/ScrollToTop'
+import { ThemeProvider } from "next-themes";
 
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
@@ -21,9 +22,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${preahvihear.variable} ${inter.className} bg-dark-30 text-dark-40`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${preahvihear.variable} ${inter.className} dark:bg-victor-100 dark:text-victor-300`}>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+
+          >
+        <div>
+
         {children}
+        </div>
+      </ThemeProvider>
       </body>
     </html>
   );

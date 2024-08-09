@@ -29,9 +29,9 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
       className={`${
         showButton ? "fixed bottom-4 right-4 opacity-100 visible translate-y-0" : "invisible opacity-0 translate-y-6"
-      } bg-brand-color hover:bg-brand-hover p-1 rounded-full text-dark-40 shadow-lg transition duration-700 animate-bounce`}
+      } dark:bg-linear-victor hover:opacity-80 p-1 rounded-full text-dark-40 shadow-lg transition duration-700 animate-bounce`}
     >
-      <ArrowUp className="w-8 h-8" />
+      <ArrowUp className="w-6 h-6" />
     </button>
   );
 };

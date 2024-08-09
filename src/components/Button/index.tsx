@@ -1,21 +1,22 @@
 import { tv } from 'tailwind-variants';
-import { ComponentProps } from "react"
+import { ComponentProps, ElementType } from "react"
 
 
 type ButtonVariantProps = 'primary' | 'outline'
 
 
 type ButtonProps = ComponentProps<'button'> & {
-    state: ButtonVariantProps
+    state: ButtonVariantProps,
+    iconLeft?: ElementType
 }
 
  
 const button = tv({
-  base: 'text-sm  w-full h-full sm:w-auto white-space font-medium rounded-md py-[12px] sm:py-2.5 px-2 sm:px-10 active:opacity-80 hover:bg-brand-hover border border-brand-color transition',
+  base: 'text-sm flex max-[430px]:w-full items-center justify-center border h-full white-space font-medium rounded-xl border-text-100 py-[12px] py-2.5 max-[430px]:px-4 px-10 active:opacity-80  transition',
   variants: {
     state: {
-      primary: 'bg-brand-color text-dark-10',
-      outline: 'bg-transparent text-brand-color hover:bg-brand-hover hover:text-dark-10'
+      primary: 'dark:border-0 dark:bg-linear-victor dark:text-victor-700 hover:opacity-80',
+      outline: 'dark:border-0 bg-transparent dark:text-victor-600 hover:opacity-80 '
     },
   defaultVariants: {
     state: 'primary'
@@ -24,9 +25,10 @@ const button = tv({
 });
  
 
-export const Button = ({children, state, className, ...props}: ButtonProps) => {
+export const Button = ({children, state, className, iconLeft: IconLeft, ...props}: ButtonProps) => {
     return(
         <button {...props} className={button({state, className})}>
+            {IconLeft && <IconLeft size={18} className="mr-2"/>}
             {children}
         </button>
     )
