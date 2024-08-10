@@ -37,7 +37,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="flex flex-col">
+      <main className="flex flex-col ">
         <Home />
         <About />
         <Experience />
