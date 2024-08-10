@@ -44,20 +44,20 @@ export const Header = () => {
     })
 
     return (
-        <header className="w-full fixed top-0 left-0 right-0 dark:bg-victor-200 backdrop-blur-3xl z-10 flex items-center h-[70px] shadow">
+        <header className="w-full fixed top-0 left-0 right-0 dark:bg-gray-dark-100 backdrop-blur-xl z-10 flex items-center min-h-[70px] shadow">
         <nav className="flex items-center justify-between container-personalizado">
-            <Logo className="h-12 w-12 dark:fill-victor-400 stroke-dark-30 hover:fill-brand-hover"/>
-            <menu className="flex items-center gap-4 md:gap-28">
-                <PopoverMenu className=" order-2 md:hidden dark:text-victor-500 transition-all" getOpen={setOpen}><Hamburger size={24} toggled={isOpen} toggle={setOpen} /></PopoverMenu>
+            <Logo className="h-12 w-12 dark:fill-gray-dark-400 dark:stroke-gray-dark-450"/>
+            <menu className="flex items-center gap-2 md:gap-14">
+                <PopoverMenu className=" order-2 md:hidden dark:text-gray-dark-450 transition-all" getOpen={setOpen}><Hamburger size={28} toggled={isOpen} toggle={setOpen} /></PopoverMenu>
 
                 <ul className="hidden md:flex items-center justify-center gap-14 text-md">
                     {links.map((item) => {
                         return (
-                            <li key={item.title} className="transition-colors cursor-pointer dar:hover:text-victor-400"><Link activeClass="active" className={item.link} to={item.link} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
+                            <li key={item.title} className="transition-colors cursor-pointer dark:hover:text-gray-dark-400"><Link activeClass="active" className={item.link} to={item.link} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
                         )
                     })}
                 </ul>
-                <div className="order-1 mr-4 md:mr-8 flex items-center">
+                <div className="order-1 md:mr-6 flex items-center">
                 <SwitchTheme checked={DarkOrLight} onCheckedChange={setDarkOrLight} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}/>
                 </div>
             </menu>

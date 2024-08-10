@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Preahvihear } from "next/font/google";
+import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import ScrollToTop from '@/components/ScrollToTop'
+
 import { ThemeProvider } from "next-themes";
 
-
-const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
-const preahvihear = Preahvihear({ subsets: ['latin'], weight: '400', variable: '--font-preahvihear' })
+const Sofia = Sofia_Sans({ subsets: ['latin'],weight: ['1', '100', '1000', '200', '300', '400', '500', '600', '700', '800', '900']})
 
 
 export const metadata: Metadata = {
@@ -23,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${preahvihear.variable} ${inter.className} dark:bg-victor-100 dark:text-victor-300`}>
+      <body className={` ${Sofia.className} dark:bg-gray-dark-500 dark:text-gray-dark-300`}>
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"

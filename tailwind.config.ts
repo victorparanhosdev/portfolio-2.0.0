@@ -14,30 +14,28 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "linear-victor": 'linear-gradient(190deg, #96c7e0, #3661a6);'
-      },
-      fontFamily:{
-        'preahvihear': 'var(--font-preahvihear)'
+        "linear-blue": 'linear-gradient(180deg, #a8d8f0, #326181);',
+        "linear-gray": "linear-gradient(180deg,#121212,#1a1a1a, #121212)",
+              "linear-gray-2": "linear-gradient(0deg,#121212,#262626)"
       },
       colors: {
-        'victor':{
-          '100': 'var(--victor-bg-100)',
-          '200': 'var(--victor-header-200)',
-          '300': 'var(--victor-text-300)',
-          '400': 'var(--victor-text-400)',
-          '500': 'var(--victor-menu-500)',
-          '600': 'var(--victor-button-600)',
-          '700': 'var(--victor-button-text-700)'
+        blue: {
+          dark: {
+            '100': '#41bbff', //botao text, span
+            '200': '#1f2937' // botao switch icone
+          }
         },
-        'brand-color': 'var(--brand-color)',
-        'brand-hover':'var(--brand-hover)',
-        'brand-light':'var(--brand-light)',
-        'dark': {
-          10: '#0B0B0B',
-          20: '#0E0E0E',
-          30: '#151515',
-          40: '#FFFFFF'
-        }, 
+        gray:{
+          dark: {
+  
+            '100': '#ffffff12', // background do header
+            '200': '#ffffff1c', //divide e background do switch
+            '300': '#ffffff99', //text descricao, menu, botao swtich
+            '400': '#ffffffde', // hover do text e descricao menu e logomarca, titulo princiapl,
+            '450': '#d1d5db', // botao menu hambuguer
+            '500': '#121212', //background principal
+          }
+        }
 
       },
       boxShadow: {

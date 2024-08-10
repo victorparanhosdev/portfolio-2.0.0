@@ -34,7 +34,7 @@ interface PopoverProps extends ComponentProps<'button'>{
         <ul className="grid text-md text-center divide-y-[1px] divide-transparent">
                     {links.map((item) => {
                         return (
-                            <li key={item.title} className="transition-colors cursor-pointer dark:hover:text-victor-400 p-2 text-lg"><Link activeClass="active" className={item.link} to={item.link} onClick={getBooleanOpen} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
+                            <li key={item.title} className="transition-colors cursor-pointer dark:hover:text-gray-dark-400 p-2 text-lg"><Link activeClass="active" className={item.link} to={item.link} onClick={getBooleanOpen} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
                         )
                     })}
                 </ul>
