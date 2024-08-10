@@ -11,13 +11,13 @@
 }
 
 ::-webkit-scrollbar {
-  background: black;
+  background: transparent;
   width: 0.4rem;
   height: 0.4rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--victor-button-600);
+  background: #41bbff;
   border-radius: 2rem;
 }
 

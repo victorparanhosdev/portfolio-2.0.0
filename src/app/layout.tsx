@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={` ${Sofia.className} dark:bg-gray-dark-500 dark:text-gray-dark-300`}>
+      <body className={` ${Sofia.className} bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300`}>
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"

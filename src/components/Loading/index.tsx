@@ -2,7 +2,7 @@ import { ColorRing } from "react-loader-spinner"
 
 export const Loading = () => {
     return (
-        <div className="h-screen w-full flex justify-center items-center">
+        <div className="h-screen w-full dark:bg-gray-dark-500 bg-white flex justify-center items-center">
             <div className="overflow-hidden">
                 <ColorRing
                     visible={true}

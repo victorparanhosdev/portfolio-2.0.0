@@ -18,13 +18,22 @@ const config: Config = {
         "linear-gray": "linear-gradient(180deg,#121212,#1a1a1a, #121212)",
         "linear-gray-2": "linear-gradient(0deg,#121212,#262626)",
         "linear-gray-3": "linear-gradient(180deg, rgba(18, 18, 18, 0) 1%, #121212 37%)",
+        "linear-light": "linear-gradient(180deg, hsla(0, 0%, 100%, 0) 1%, #fff 37%)",
+        'linear-button-light': "linear-gradient(90deg, #009bff, #0062ff)"
     },
       colors: {
         blue: {
           dark: {
             '100': '#41bbff', //botao text, span
-            '200': '#1f2937' // botao switch icone
-          }
+            '200': '#1f2937', // botao switch icone
+            '300': '#374151' // botao cor icone do switch
+          },
+          light: {
+            '100': '#5b6e80', //botao menu e da descrição,
+            '200': '#0062ff', //cor hover do botao menu
+            '400': '#00083d', // cor do titulo principal
+            '500': '#4b5563',// cor do icone do swith
+          } 
         },
         gray:{
           dark: {
@@ -35,6 +44,10 @@ const config: Config = {
             '400': '#ffffffde', // hover do text e descricao menu e logomarca, titulo princiapl,
             '450': '#d1d5db', // botao menu hambuguer
             '500': '#121212', //background principal
+          },
+          light: {
+            '100': '#ffffffe6', //bg header
+            '200': '#20131321', //bg do switch
           }
         }
 
