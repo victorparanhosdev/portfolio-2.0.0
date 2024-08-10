@@ -9,20 +9,22 @@ import FotoPerfil from '../../../public/PARANHOS.png'
 export const Home = () => {
     return(
         <Element name="home" className="element shadow-2xl">
-        <section className="transition-all container-personalizado py-32 w-full">
-            <div className="block md:flex md:gap-16 items-center">
+        <section className="transition-all container-personalizado py-32 md:pt-32 md:pb-0 w-full h-full">
+            <div className="block md:grid grid-flow-col md:gap-16 items-center ">
 
-            <div className="min-w-[250px] max-w-[420px] h-[420px] sm:max-w-[600px] sm:h-[500px] -mt-[66px] m-auto md:m-0 flex md:grid justify-center mb-2">
+            <div className="min-w-[250px] max-w-[420px] h-[420px] md:max-w-[600px] -mt-12 m-auto md:m-0 flex md:grid justify-center md:dark:after:hidden dark:after:content-[''] dark:after:block dark:after:absolute dark:after:bottom-0 relative dark:after:h-32 dark:after:w-full dark:after:bg-linear-gray-3 dark:after:z-[1] md:h-full md:w-[400px]">
             <Image data-aos="flip-left" priority width={460} height={460} src={FotoPerfil.src} className=" order-1  inset-0 object-cover object-top w-full h-full" alt="Foto de Perfil" />
 
             </div>
 
 
-            
-            <div className="flex w-full flex-col md:justify-items-startc place-items-center text-center md:text-start md:place-items-baseline">
+            <div className="-mt-16 relative z-10 md:mt-0">
+
+          
+            <div className="items-center flex w-full flex-col md:justify-items-startc text-center md:text-start md:place-items-baseline">
             <h1 data-aos="fade-left" className="text-2xl font-medium ">Olá, eu sou</h1>
             <p data-aos="fade-right"  className="dark:text-gray-dark-400 text-4xl md:text-6xl mb-1 font-semibold">Victor Paranhos</p>
-            <div className="text-lg min-h-14">
+            <div className="text-lg min-h-14 w-full">
 
             <Typewriter data-aos="fade-left"
             words={['Desenvolvedor FullStack', 'Graduado em Ánalise e Desenvolvimento de Sistemas']}
@@ -40,7 +42,7 @@ export const Home = () => {
           
           
             </div>
-            <ul data-aos="fade-right" className="flex items-center gap-5 dark:text-blue-dark-100">
+            <ul data-aos="fade-right" className="mt-4 flex items-center gap-5 dark:text-blue-dark-100">
                     <li><a href=""><XLogo className="hover:opacity-70 hover:scale-110 transition  " size={28} /></a></li>
                     <li><a href=""><WhatsappLogo className="hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
                     <li><a href=""><FacebookLogo className="hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
@@ -51,6 +53,7 @@ export const Home = () => {
                 </ul>
 
           
+            </div>
             </div>
  
 

@@ -16,8 +16,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "linear-blue": 'linear-gradient(180deg, #a8d8f0, #326181);',
         "linear-gray": "linear-gradient(180deg,#121212,#1a1a1a, #121212)",
-              "linear-gray-2": "linear-gradient(0deg,#121212,#262626)"
-      },
+        "linear-gray-2": "linear-gradient(0deg,#121212,#262626)",
+        "linear-gray-3": "linear-gradient(180deg, rgba(18, 18, 18, 0) 1%, #121212 37%)",
+    },
       colors: {
         blue: {
           dark: {

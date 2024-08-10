@@ -44,7 +44,7 @@ export const Header = () => {
     })
 
     return (
-        <header className="w-full fixed top-0 left-0 right-0 dark:bg-gray-dark-100 backdrop-blur-xl z-10 flex items-center min-h-[70px] shadow">
+        <header className="w-full fixed top-0 left-0 right-0 dark:bg-gray-dark-100 backdrop-blur-xl z-50 flex items-center min-h-[70px] shadow">
         <nav className="flex items-center justify-between container-personalizado">
             <Logo className="h-12 w-12 dark:fill-gray-dark-400 dark:stroke-gray-dark-450"/>
             <menu className="flex items-center gap-2 md:gap-14">
