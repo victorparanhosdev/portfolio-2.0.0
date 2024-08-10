@@ -8,7 +8,7 @@ import FotoPerfil from '../../../public/PARANHOS.png'
 
 export const Home = () => {
     return(
-        <Element name="home" className="element dark:shadow-2xl">
+        <Element name="home" className="element shadow-2xl">
         <section className="transition-all container-personalizado pt-32  w-full h-full">
             <div className="block md:grid grid-flow-col md:gap-10 items-center justify-stretch">
 
