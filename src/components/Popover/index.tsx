@@ -28,13 +28,13 @@ interface PopoverProps extends ComponentProps<'button'>{
         </Popover.Trigger>
         <Popover.Portal>          
           <Popover.Content onPointerDownOutside={getBooleanOpen}
-            className="PopoverContent rounded-bl-xl rounded-tl-xl backdrop-blur-xl bg-black/80 data-[state=open]:animate-slideDownAndFade z-50"
+            className="PopoverContent rounded-bl-xl rounded-tl-xl backdrop-blur-xl bg-gray-dark-100 data-[state=open]:animate-slideDownAndFade z-50"
             sideOffset={5}
           >
-        <ul className="grid text-md text-center divide-y-[1px] divide-transparent">
+        <ul className="grid text-md ">
                     {links.map((item) => {
                         return (
-                            <li key={item.title} className="transition-colors cursor-pointer dark:hover:text-gray-dark-400 p-2 text-lg"><Link activeClass="active" className={item.link} to={item.link} onClick={getBooleanOpen} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
+                            <li key={item.title} className="transition-colors cursor-pointer dark:hover:text-gray-dark-400 py-2 px-4 text-lg"><Link activeClass="active" className={item.link} to={item.link} onClick={getBooleanOpen} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
                         )
                     })}
                 </ul>
