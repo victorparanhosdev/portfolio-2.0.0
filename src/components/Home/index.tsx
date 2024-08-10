@@ -43,12 +43,12 @@ export const Home = () => {
             </div>
 
             <ul data-aos="fade-right" className="w-full justify-center md:justify-start flex items-center gap-5">
-                    <li><a href=""><XLogo className="dark:text-gray-dark-400 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition  " size={28} /></a></li>
-                    <li><a href=""><WhatsappLogo className="dark:text-gray-dark-400 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><FacebookLogo className="dark:text-gray-dark-400 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><GithubLogo className="dark:text-gray-dark-400 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><InstagramLogo className="dark:text-gray-dark-400 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><LinkedinLogo className="dark:text-gray-dark-400 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
+                    <li><a href=""><XLogo className="dark:text-blue-dark-100 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition  " size={28} /></a></li>
+                    <li><a href=""><WhatsappLogo className="dark:text-blue-dark-100 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
+                    <li><a href=""><FacebookLogo className="dark:text-blue-dark-100 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
+                    <li><a href=""><GithubLogo className="dark:text-blue-dark-100 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
+                    <li><a href=""><InstagramLogo className="dark:text-blue-dark-100 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
+                    <li><a href=""><LinkedinLogo className="dark:text-blue-dark-100 text-blue-light-200 hover:text-blue-light-400 dark:hover:opacity-70 hover:scale-110 transition " size={28} /></a></li>
 
                 </ul>
             </div>
