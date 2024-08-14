@@ -14,36 +14,37 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "linear-blue": 'linear-gradient(180deg, #a8d8f0, #326181);',
+        "linear-blue": 'linear-gradient(180deg, #81e8f7, #1255be);',
         "linear-gray": "linear-gradient(180deg,#121212,#1a1a1a, #121212)",
         "linear-gray-2": "linear-gradient(0deg,#121212,#262626)",
         "linear-gray-3": "linear-gradient(180deg, rgba(18, 18, 18, 0) 1%, #121212 37%)",
         "linear-light": "linear-gradient(180deg, hsla(0, 0%, 100%, 0) 1%, #fff 37%)",
-        'linear-button-light': "linear-gradient(90deg, #009bff, #0062ff)"
+        'linear-button-light': "linear-gradient(180deg, #009bff, #0062ff)",
+        "linear-footer": "linear-gradient(180deg, #ffffff, #c5d9f9)"
     },
       colors: {
         blue: {
           dark: {
             '100': '#41bbff', //botao text, span
+            '300': '#374151', // botao cor icone do switch
             '200': '#1f2937', // botao switch icone
-            '300': '#374151' // botao cor icone do switch
           },
           light: {
             '100': '#5b6e80', //botao menu e da descrição,
+            '500': '#4b5563',// cor do icone do swith
             '200': '#0062ff', //cor hover do botao menu
             '400': '#00083d', // cor do titulo principal
-            '500': '#4b5563',// cor do icone do swith
           } 
         },
         gray:{
           dark: {
   
-            '100': '#ffffff12', // background do header
-            '200': '#ffffff1c', //divide e background do switch
-            '300': '#ffffff99', //text descricao, menu, botao swtich
-            '400': '#ffffffde', // hover do text e descricao menu e logomarca, titulo princiapl,
-            '450': '#d1d5db', // botao menu hambuguer
             '500': '#121212', //background principal
+            '450': '#d1d5db', // botao menu hambuguer
+            '400': '#ffffffde', // hover do text e descricao menu e logomarca, titulo princiapl,
+            '300': '#ffffff99', //text descricao, menu, botao swtich
+            '200': '#ffffff1c', //divide e background do switch
+            '100': '#ffffff12', // background do header
           },
           light: {
             '100': '#ffffffe6', //bg header
@@ -60,7 +61,7 @@ const config: Config = {
         layout: '70px 1fr auto'
       },
       gridTemplateColumns:{
-        projects: 'repeat(auto-fit, minmax(300px, 1fr))'
+        projects: 'repeat(auto-fit, minmax(340px, 1fr))'
       },
       keyframes: {
         overlayShow: {

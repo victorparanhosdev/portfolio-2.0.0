@@ -7,7 +7,7 @@ type CardProps = ComponentProps<'div'> & {}
 export const Card = ({...props}: CardProps) => {
     return(
         <div {...props} className="w-full">
-            <div  className="flex items-center justify-center border-l-2 dark:border-blue-dark-100 w-full h-[200px] border-blue-light-200 bg-[#f2f2f2] dark:bg-gray-dark-100">
+            <div  className="flex items-center justify-center border-l-2 dark:border-blue-dark-100 w-full h-[200px] border-blue-light-200 bg-[#f0f6ff] dark:bg-gray-dark-100">
                 <h1 className="text-blue-light-200 dark:text-blue-dark-100">Imagem Projeto</h1>
             </div>
 

@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants';
 import { motion } from 'framer-motion'
 
 const tabsStyles = tv({
-  base: 'relative md:rounded-r-md md:rounded-tl-none md:rounded-bl-none  md:text-start text-center w-full md:border-l-2 border-b-2 md:border-b-0 dark:border-gray-dark-100 block py-4 px-4 sm:px-9 dark:data-[state="active"]:bg-gray-dark-100 dark:data-[state="active"]:text-gray-dark-400 rounded-tl-md rounded-tr-md data-[state=active]:bg-[#00000012] data-[state=active]:text-blue-light-200 border-[#00000012]',
+  base: 'relative md:rounded-r-md md:rounded-tl-none md:rounded-bl-none  md:text-start text-center w-full md:border-l-2 border-b-2 border-victor-200 md:border-b-0 dark:border-gray-dark-100 md:border-l-victor-500 block py-4 px-4 sm:px-9 dark:data-[state="active"]:bg-gray-dark-100 dark:data-[state="active"]:text-gray-dark-400 rounded-tl-md rounded-tr-md data-[state=active]:bg-[#f0f6ff] data-[state=active]:text-blue-light-200 border-[#00000012]',
 
 })
 

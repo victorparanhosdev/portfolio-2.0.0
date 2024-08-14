@@ -7,7 +7,7 @@ import { DownloadSimple, MapPin} from "@phosphor-icons/react"
 
 export const About = () => {
     return (
-        <Element name="about" className="element dark:bg-linear-gray shadow-2xl dark:shadow-none">
+        <Element name="about" className="element dark:bg-linear-gray">
             <section data-aos="fade-up" className="container-personalizado py-32 ">
                 <h1 className="text-3xl dark:text-gray-dark-400 mb-5 font-extrabold text-blue-light-400">Sobre mim</h1>
                 <div className="mb-6 flex align-baseline gap-4">
