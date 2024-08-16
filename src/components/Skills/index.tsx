@@ -29,8 +29,8 @@ export const Skills = () => {
     return(
         <Element name="skills" className="element">
         <section ref={ref} data-aos="fade-up" className="container-personalizado pb-20 pt-32">
-            <h1 className="text-3xl mb-12  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidade</h1>
-            <ul className="grid grid-cols-skills gap-4 overflow-hidden">
+            <h1 className="text-3xl mb-12  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidades</h1>
+            <ul className="grid grid-cols-skills gap-4 overflow-hidden text-white ">
             {Array.from({length: 8}).map((_,index)=> {
                 return(
                     <motion.li
@@ -45,8 +45,8 @@ export const Skills = () => {
                         repeatDelay: 1,
                     }}
                       
-                      key={index} className="rounded-xl flex items-center justify-center bg-gray-dark-200 min-h-[100px] max-h-[120px]">
-                        <motion.h1 className="text-white">{rounded}</motion.h1>%
+                      key={index} className="rounded-xl flex items-center justify-center dark:bg-gray-dark-200 min-h-[100px] max-h-[120px] bg-blue-light-200">
+                        <motion.h1 >{rounded}</motion.h1>%
                     </motion.li>
                 )
             })}
