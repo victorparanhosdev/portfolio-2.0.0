@@ -9,7 +9,7 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-    
+     
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -61,7 +61,8 @@ const config: Config = {
         layout: '70px 1fr auto'
       },
       gridTemplateColumns:{
-        projects: 'repeat(auto-fit, minmax(340px, 1fr))'
+        projects: 'repeat(auto-fit, minmax(340px, 1fr))',
+        skills: 'repeat(auto-fit, minmax(100px, 1fr))'
       },
       keyframes: {
         overlayShow: {

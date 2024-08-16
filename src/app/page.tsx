@@ -10,6 +10,7 @@ import { Loading } from "../components/Loading";
 import { Header } from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Footer } from "@/components/Footer";
+import { Skills } from "@/components/Skills";
 
 
 export default function HomePage() {
@@ -41,7 +42,9 @@ export default function HomePage() {
         <Home />
         <About />
         <Experience />
+        <Skills/>
         <Projects />
+
       </main>
       <Footer />
       <ScrollToTop />
