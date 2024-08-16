@@ -1,7 +1,8 @@
-import React, { ComponentProps, Dispatch, ForwardedRef, forwardRef, ReactNode, SetStateAction, useState } from 'react';
+import React, { ComponentProps, Dispatch, ForwardedRef, forwardRef, ReactNode, SetStateAction, useEffect, useState } from 'react';
 import * as Popover from '@radix-ui/react-popover';
 import { links } from '../Header';
 import { Link } from 'react-scroll';
+import useMedia from 'use-media'
 
 interface PopoverProps extends ComponentProps<'button'>{
     children: ReactNode;
@@ -12,12 +13,22 @@ interface PopoverProps extends ComponentProps<'button'>{
   export const PopoverMenu = forwardRef<HTMLButtonElement, PopoverProps>(
     ({ children, getOpen, ...props}, ref: ForwardedRef<HTMLButtonElement>) => {
       const [isOpen, setOpen] = useState(false);
+      const isMedia = useMedia({minWidth: '768px'})
+    
 
       function getBooleanOpen() {
         const newOpenState = !isOpen;
         setOpen(newOpenState);
         getOpen(newOpenState);
       }
+
+      useEffect(()=> {
+        if(isMedia){
+          setOpen(false);
+          getOpen(false);
+        }
+
+      },[isMedia])
   
       return (
         <Popover.Root open={isOpen} onOpenChange={setOpen}>

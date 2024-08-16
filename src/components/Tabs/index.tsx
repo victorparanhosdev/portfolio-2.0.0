@@ -9,7 +9,7 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
   const isMd = useMedia({ minWidth: '768px' });
 
   return (
-    <Tabs.Root value={currentTab} onValueChange={setCurrentTab} {...props} className={`grid md:flex gap-24 min-w-52 ${props.className}`}>
+    <Tabs.Root value={currentTab} onValueChange={setCurrentTab} {...props} className={`grid md:flex gap-16 sm:gap-16 md:gap-24 min-w-52 ${props.className}`}>
       <Tabs.List className='md:block flex'>
         <TabItem isSelected={currentTab === 'stefanini'} title='Stefanini' value="stefanini" />
         <TabItem isSelected={currentTab === 'vtrina'} title='Vtrina' value="vtrina" />
@@ -19,14 +19,14 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
         <AnimatePresence mode="wait">
           <motion.div
             key={currentTab}
-            initial={isMd ? { x: 5, opacity: 0 } : { y: 5, opacity: 0 }}
+            initial={isMd ? { x: 10, opacity: 0 } : { y: 10, opacity: 0 }}
             animate={isMd ? { x: 0, opacity: 1 } : { y: 0, opacity: 1 }}
-            exit={isMd ? { x: -5, opacity: 0 } : { y: -5, opacity: 0 }}
-            transition={{ duration: 0.2}}
+
+            transition={{ duration: 0.4}}
           >
      
               <Tabs.Content value="stefanini">
-                <div className='flex items-center justify-between gap-1 sm:flex-row flex-col'>   
+                <div className='flex items-center justify-between gap-1 sm:flex-row flex-col sm:mb-8 md:mb-0'>   
                   <h1 className='font-medium text-xl sm:text-2xl dark:text-gray-dark-400 text-blue-light-100'>Desenvolvedor Junior</h1>
                   <span className='dark:text-gray-dark-400 text-blue-light-100'>Junho 2024 - Atual</span>
                 </div>
@@ -34,7 +34,7 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
                 <p>Desenvolvedor de sistemas do Projeto SEIA Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, beatae alias corporis ullam dolorem ut enim hic quas dolorum aperiam excepturi commodi, tenetur iste quod. Autem deleniti nemo architecto sunt?</p>
               </Tabs.Content>
               <Tabs.Content value="vtrina">
-                <div className='flex items-center sm:flex-row flex-col justify-between gap-1'> 
+                <div className='flex items-center sm:flex-row flex-col justify-between gap-1 sm:mb-8 md:mb-0'> 
                   <h1 className='font-medium text-xl sm:text-2xl dark:text-gray-dark-400 text-blue-light-100'>Estagiário de Suporte Técnico</h1>
                   <span className='dark:text-gray-dark-400 text-blue-light-100'>Janeiro 2024 - Junho 2024</span>
                 </div>
@@ -43,7 +43,7 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
                   - Prestar Suporte Técnico para resolver questões do cliente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos? Ipsam velit blanditiis quidem amet, laudantium possimus iusto laboriosam voluptate! Nemo veritatis repellendus quasi fugiat illum ipsum veniam possimus fugit? Lorem ipsum dolor sit amet, consectetur adipisicamet consectetur adipisicing elit. Exercitationem nam harum at molestiae totam quia reprehenderit, est consectetur nulla error natus dolore rerum atque odio ullam! Ad quos numquam asperiores?</p>
               </Tabs.Content>
               <Tabs.Content value="dires">
-                <div className='flex sm:flex-row flex-col items-center justify-between gap-1'>
+                <div className='flex sm:flex-row flex-col items-center justify-between gap-1 sm:mb-8 md:mb-0'>
                   <h1 className='font-medium text-xl sm:text-2xl dark:text-gray-dark-400 text-blue-light-100'>Técnico de Informática</h1>
                   <span className='dark:text-gray-dark-400 text-blue-light-100'>Maio 2014 - Maio 2024</span>
                 </div>
