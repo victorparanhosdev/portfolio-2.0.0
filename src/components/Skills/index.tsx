@@ -56,4 +56,4 @@ export const Skills = () => {
         </section>
         </Element>
     )
-}
+} 
