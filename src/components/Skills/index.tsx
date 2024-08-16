@@ -7,14 +7,14 @@ import { useEffect } from "react"
 export const Skills = () => {
     const { ref, inView } = useInView({
         triggerOnce: false,
-        threshold: 0.2 
+        threshold: 0.3 
     });
 
   
 
     return(
         <Element name="skills" className="element">
-        <section ref={ref} data-aos="fade-up" className="container-personalizado pb-10 pt-32">
+        <section ref={ref} data-aos="fade-up" className="container-personalizado py-32">
             <h1 className="text-3xl mb-12  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidades</h1>
             <ul className="grid grid-cols-skills gap-4 overflow-hidden text-white ">
             {Array.from({length: 8}).map((_,index)=> {
