@@ -9,7 +9,7 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
   const isMd = useMedia({ minWidth: '768px' });
 
   return (
-    <Tabs.Root value={currentTab} onValueChange={setCurrentTab} {...props} className={`grid md:flex gap-16 sm:gap-16 md:gap-24 min-w-52 ${props.className}`}>
+    <Tabs.Root value={currentTab} onValueChange={setCurrentTab} {...props} className={`grid md:flex gap-16 sm:gap-16 md:gap-20 min-w-52 ${props.className}`}>
       <Tabs.List className='md:block flex'>
         <TabItem isSelected={currentTab === 'stefanini'} title='Stefanini' value="stefanini" />
         <TabItem isSelected={currentTab === 'vtrina'} title='Vtrina' value="vtrina" />
