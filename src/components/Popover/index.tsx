@@ -46,7 +46,7 @@ interface PopoverProps extends ComponentProps<'button'>{
         <ul className="grid text-md ">
                     {links.map((item) => {
                         return (
-                            <li key={item.title}><Link activeClass="active" className={`block relative transition-colors cursor-pointer py-2 px-4 text-lg before:content-[''] before:block before:absolute before:left-1 before:h-1/2 before:translate-y-[50%] before:top-0  before:w-0.5 ${activeSection === item.link ? ' dark:before:bg-gray-dark-400 before:bg-blue-light-200  dark:text-gray-dark-400 text-blue-light-200' : 'dark:hover:text-gray-dark-400 hover:text-blue-light-200'}`} onSetActive={setActiveSection} to={item.link} onClick={(getBooleanOpen)} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
+                            <li key={item.title}><Link activeClass="active" className={`block relative transition-colors cursor-pointer py-2 px-4 text-lg ${activeSection === item.link ? 'dark:text-gray-dark-400 text-blue-light-200' : 'dark:hover:text-gray-dark-400 hover:text-blue-light-200'}`} onSetActive={setActiveSection} to={item.link} onClick={(getBooleanOpen)} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
                         )
                     })}
                 </ul>
