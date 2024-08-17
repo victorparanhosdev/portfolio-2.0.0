@@ -52,10 +52,7 @@ export const Header = () => {
 
     }, [])
 
-    function handleSection(to: string){
-        setActiveSection(to)
-    }   
-
+    
 
 
     return (
