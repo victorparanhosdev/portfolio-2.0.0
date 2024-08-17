@@ -12,7 +12,7 @@ type ButtonProps = ComponentProps<'button'> & {
 
  
 const button = tv({
-  base: 'text-sm flex max-[430px]:w-full items-center justify-center h-full white-space font-medium rounded-xl py-3 py-3 max-[430px]:px-4 px-10 transition dark:opacity-80 dark:hover:opacity-100 hover:opacity-80 font-extrabold h-full',
+  base: 'text-sm flex max-[430px]:w-full items-center justify-center h-full white-space font-medium rounded-xl py-3 py-3 max-[430px]:px-4 px-10 transition dark:opacity-80 dark:hover:opacity-90 hover:opacity-80 font-extrabold h-full',
   variants: {
     state: {
       primary: 'bg-linear-button-light dark:bg-linear-blue dark:text-blue-dark-200 text-gray-light-100 font-bold',

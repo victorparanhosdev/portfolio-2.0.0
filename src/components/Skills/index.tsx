@@ -1,8 +1,8 @@
 'use client'
-import { animate, motion, useMotionValue, useTransform } from "framer-motion"
+import { motion} from "framer-motion"
 import { Element } from "react-scroll"
 import { useInView } from 'react-intersection-observer'
-import { useEffect } from "react"
+
 
 export const Skills = () => {
     const { ref, inView } = useInView({
@@ -25,13 +25,13 @@ export const Skills = () => {
                         rotate: [0, 0, 180, 180, 0],
                     } : {}}
                     transition={{
-                        duration: 1,
+                        duration: 1.2,
                         ease: "easeInOut",
                         times: [0, 0.2, 0.5, 0.8, 1],
 
                     }}
                       
-                      key={index} className="rounded-xl flex items-center justify-center dark:bg-gray-dark-200 min-h-[100px] max-h-[120px] bg-blue-light-200">
+                      key={index} className="rounded-xl flex items-center justify-center dark:bg-gray-dark-200 min-h-[100px] max-h-[120px] bg-blue-dark-100">
                             <h1>OLa</h1>
                     </motion.li>
                 )
