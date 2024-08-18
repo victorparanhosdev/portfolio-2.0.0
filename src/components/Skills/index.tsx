@@ -6,7 +6,6 @@ import { Element } from "react-scroll"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay, Mousewheel, EffectCoverflow } from 'swiper/modules';
 import { iconsSkills } from "../../../public/iconSkills";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useMedia from 'use-media'
 import 'swiper/css';
 import 'swiper/css/pagination';
