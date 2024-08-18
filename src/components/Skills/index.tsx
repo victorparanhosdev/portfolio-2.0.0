@@ -26,7 +26,7 @@ export const Skills = () => {
                 </div>
                 {!isMedia ?
                     <Swiper
-                        className="text-white mySwiper min-h-[150px] "
+                        className="text-white mySwiper min-h-[160px] "
                         modules={[Pagination, Autoplay, Mousewheel, Navigation, A11y, EffectCoverflow]}
                         pagination={{ clickable: true, dynamicBullets: true }}
                         effect={'coverflow'}
@@ -46,11 +46,11 @@ export const Skills = () => {
                             },
 
                             380: {
-                                slidesPerView: 2.9,
+                                slidesPerView: 2.5,
 
                             },
-                            500: {
-                                slidesPerView: 3
+                            600: {
+                                slidesPerView: 2.9
                             }
 
                         }}
