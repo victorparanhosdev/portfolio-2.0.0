@@ -21,9 +21,9 @@ export const Skills = () => {
         <Element name="skills" className="element">
             <section data-aos="fade-up" className="container-personalizado py-32">
                 <h1 className="text-3xl mb-6  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidades</h1>
-                <div className="flex gap-2 items-center mb-10">
-                    <h1 className="text-justify">Aqui você encontra minhas principais habilidades na qual tenho maior conhecimento e experiência. No entanto, estou sempre em busca de novos aprendizados constantemente, me atualizando e explorando novas tecnologias.</h1>
-                </div>
+
+                    <h1 className="text-justify  mb-12">Aqui você encontra minhas principais habilidades na qual tenho maior conhecimento e experiência. No entanto, estou sempre em busca de novos aprendizados constantemente, me atualizando e explorando novas tecnologias.</h1>
+ 
                 {!isMedia ?
                     <Swiper
                         className="text-white mySwiper min-h-[160px] "
