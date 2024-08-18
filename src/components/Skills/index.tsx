@@ -41,7 +41,7 @@ export const Skills = () => {
 
                         },
 
-                        395: {
+                        380: {
                             slidesPerView: 2.9,
 
                         },
