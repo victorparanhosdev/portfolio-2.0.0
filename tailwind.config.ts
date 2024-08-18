@@ -25,30 +25,30 @@ const config: Config = {
       colors: {
         blue: {
           dark: {
-            '100': '#41bbff', //botao text, span
-            '300': '#374151', // botao cor icone do switch
-            '200': '#1f2937', // botao switch icone
+            '100': '#41bbff', 
+            '300': '#374151', 
+            '200': '#1f2937',
           },
           light: {
-            '100': '#5b6e80', //botao menu e da descrição,
-            '500': '#4b5563',// cor do icone do swith
-            '200': '#0062ff', //cor hover do botao menu
-            '400': '#00083d', // cor do titulo principal
+            '100': '#5b6e80', 
+            '500': '#4b5563',
+            '200': '#0062ff', 
+            '400': '#00083d', 
           } 
         },
         gray:{
           dark: {
   
-            '500': '#121212', //background principal
-            '450': '#d1d5db', // botao menu hambuguer
-            '400': '#ffffffde', // hover do text e descricao menu e logomarca, titulo princiapl,
-            '300': '#ffffff99', //text descricao, menu, botao swtich
-            '200': '#ffffff1c', //divide e background do switch
-            '100': '#ffffff12', // background do header
+            '500': '#121212', 
+            '450': '#d1d5db', 
+            '400': '#ffffffde',
+            '300': '#ffffff99', 
+            '200': '#ffffff1c',
+            '100': '#ffffff12', 
           },
           light: {
-            '100': '#ffffffe6', //bg header
-            '200': '#20131321', //bg do switch
+            '100': '#ffffffe6', 
+            '200': '#20131321', 
           }
         }
 

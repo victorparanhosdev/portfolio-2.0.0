@@ -1,63 +1,65 @@
 
-import { faHtml5, faCss3, faJs, faReact, faFigma, faJava, faNodeJs, faPython, faGitAlt } from '@fortawesome/free-brands-svg-icons'
 
+import { SiTypescript, SiAdobephotoshop } from "react-icons/si";
+import {FaHtml5, FaCss3, FaReact, FaNodeJs, FaJava, FaPython, FaGitAlt, FaFigma, FaDatabase} from 'react-icons/fa'
+import { IoLogoJavascript } from "react-icons/io5"
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export const iconsSkills = [
     {
         tech: 'HTML5',
-        imagem: faHtml5
+        imagem: FaHtml5
     },
     {
         tech: 'CSS3',
-        imagem: faCss3
+        imagem: FaCss3 
     },
     {
         tech: 'JavaScript',
-        imagem: faJs
+        imagem: IoLogoJavascript 
     },
     {
         tech: 'TypesSript',
-        imagem: null,
-        imagem2: ''
+        imagem: SiTypescript 
     },
     {
         tech: 'React.js',
-        imagem: faReact
+        imagem: FaReact 
     },
     {
         tech: 'Next.js',
-        imagem: null,
-        imagem2: ''
+        imagem: RiNextjsFill 
     },
     {
         tech: 'TailwindCSS',
-        imagem: null,
-        imagem2: ''
+        imagem: RiTailwindCssFill 
     },
     {
         tech: 'Node.js',
-        imagem: faNodeJs,
-        
+        imagem: FaNodeJs 
     },
     {
         tech: 'Java',
-        imagem: faJava
+        imagem: FaJava 
     },
     {
         tech: 'Python',
-        imagem: faPython
+        imagem: FaPython 
+    },
+    {
+        tech: 'SQL',
+        imagem: FaDatabase
     },
     {
         tech: 'Git',
-        imagem: faGitAlt
+        imagem: FaGitAlt 
     },
     {
         tech: 'Figma',
-        imagem: faFigma
+        imagem: FaFigma 
     },
     {
         tech: 'Photoshop',
-        imagem: null,
-        imagem2: ''
+        imagem: SiAdobephotoshop 
     }
 ];

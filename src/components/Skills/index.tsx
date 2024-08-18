@@ -4,7 +4,7 @@ import { Element } from "react-scroll"
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y, Autoplay, Mousewheel, EffectCoverflow, EffectCards } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay, Mousewheel, EffectCoverflow } from 'swiper/modules';
 import { iconsSkills } from "../../../public/iconSkills";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import useMedia from 'use-media'
@@ -16,72 +16,76 @@ import './stylesSwiper.css'
 
 
 export const Skills = () => {
-    const isMedia = useMedia({ minWidth: '500px' })
+    const isMedia = useMedia({ minWidth: '835px' })
 
     return (
         <Element name="skills" className="element">
             <section data-aos="fade-up" className="container-personalizado py-32">
                 <h1 className="text-3xl mb-6  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidades</h1>
                 <div className="flex gap-2 items-center mb-10">
-                    <h1 className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit similique magnam ipsam magni necessitatibus aliquid cupiditate eos nesciunt. Reprehenderit quos quia illo aliquid voluptatem molestiae voluptatum esse laboriosam nostruLorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit similique magnam ipsam magni necessitatibus aliquid cupiditate eos nesciunt. Reprehenderit quos quia illo aliquid voluptatem molestiae voluptatum esse laboriosam nostrum.</h1>
-                 </div>
-                {!isMedia ? 
-                <Swiper
-                    className="text-white mySwiper min-h-[150px] "
-                    modules={[Pagination, Autoplay, Mousewheel, Navigation, A11y, EffectCoverflow]}
-                    pagination={{ clickable: true, dynamicBullets: true }}
-                    effect={'coverflow'}
-                    autoplay={{ delay: 1400 }}
-                    mousewheel={{ invert: true }}
-                    grabCursor={true}
-                    centeredSlides={true}
-                    breakpoints={{
-                        0: {
-                            slidesPerView: 1.5,
+                    <h1 className="text-justify">Aqui você encontra minhas principais habilidades na qual tenho maior conhecimento e experiência. No entanto, estou sempre em busca de novos aprendizados constantemente, me atualizando e explorando novas tecnologias.</h1>
+                </div>
+                {!isMedia ?
+                    <Swiper
+                        className="text-white mySwiper min-h-[150px] "
+                        modules={[Pagination, Autoplay, Mousewheel, Navigation, A11y, EffectCoverflow]}
+                        pagination={{ clickable: true, dynamicBullets: true }}
+                        effect={'coverflow'}
+                        autoplay={{ delay: 1400 }}
+                        mousewheel={{ invert: true }}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1.5,
 
-                        },
-                        300: {
-                            slidesPerView: 1.6,
+                            },
+                            300: {
+                                slidesPerView: 1.6,
 
-                        },
+                            },
 
-                        380: {
-                            slidesPerView: 2.9,
+                            380: {
+                                slidesPerView: 2.9,
 
-                        },
+                            },
+                            500: {
+                                slidesPerView: 3
+                            }
 
-                    }}
-                >
+                        }}
+                    >
 
-                    {
-                        iconsSkills.map((item) => {
-
-                            return (
-                                <SwiperSlide key={item.tech}> <li
-                                    className="rounded-xl grid justify-center content-center dark:bg-gray-dark-200  min-h-[120px] min-w-[120px] dark:border-0 border bg-[#f0f6ff80] border-[#2c96df78] text-blue-light-100 dark:text-gray-dark-300 group text-center transition-colors group ">
-                                    <h1 className="text-center mb-2 text-base md:text-lg font-bold text-[#1247a5] dark:text-[#8fbfd9] opacity-80 group-hover:opacity-100">{item.tech}</h1>
-                                    {item.imagem ? <FontAwesomeIcon className="text-6xl text-center w-full text-[#1247a5] dark:text-[#8fbfd9] opacity-90 group-hover:opacity-100" icon={item.imagem} /> : <h1 className="text-[#1247a5] dark:text-[#8fbfd9] ">{item.tech}</h1>}
-                                </li>
-                                </SwiperSlide>
-                            )
-                        })}
-                </Swiper> : 
-                 <ul className="grid gap-4 grid-cols-skills">
                         {
                             iconsSkills.map((item) => {
+                                const Icon = item.imagem
                                 return (
-                                   <li key={item.tech}
-                                        className=" rounded-xl grid justify-center content-center dark:bg-gray-dark-200  min-h-[120px] dark:border-0 border bg-[#f0f6ff80] border-[#2c96df78] text-blue-light-100 dark:text-gray-dark-300 group text-center transition-colors group ">
-                                        <h1 className="text-center mb-2 text-base md:text-lg font-bold text-[#1247a5] dark:text-[#8fbfd9] opacity-80 group-hover:opacity-100">{item.tech}</h1>
-                                        {item.imagem ? <FontAwesomeIcon className="text-6xl text-center w-full text-[#1247a5] dark:text-[#8fbfd9] opacity-90 group-hover:opacity-100" icon={item.imagem} /> : <h1 className="text-[#1247a5] dark:text-[#8fbfd9] ">{item.tech}</h1>}
+                                    <SwiperSlide key={item.tech}> <li
+                                        className="rounded-xl grid justify-center justify-items-center content-center dark:bg-gray-dark-200  min-h-[120px] min-w-[120px] dark:border-0 border bg-[#f0f6ff80] border-[#2c96df78] text-blue-light-100 dark:text-gray-dark-300 group text-center transition-colors group ">
+                                        <h1 className="text-center mb-2 font-bold text-[#1247a5] dark:text-[#8fbfd9] opacity-80 group-hover:opacity-100">{item.tech}</h1>
+                                        <Icon className="text-6xl text-center w-full text-[#1247a5] dark:text-[#8fbfd9] opacity-90 group-hover:opacity-100" />
+                                    </li>
+                                    </SwiperSlide>
+                                )
+                            })}
+                    </Swiper> :
+                    <ul className="grid gap-4 grid-cols-skills">
+                        {
+                            iconsSkills.map((item) => {
+                                const Icon = item.imagem
+                                return (
+                                    <li key={item.tech}
+                                        className=" rounded-xl grid justify-items-center justify-center content-center dark:bg-gray-dark-200  min-h-[120px] dark:border-0 border bg-[#f0f6ff80] border-[#2c96df78] text-blue-light-100 dark:text-gray-dark-300 group text-center transition-colors group ">
+                                        <h1 className="text-center mb-2 font-bold text-[#1247a5] dark:text-[#8fbfd9] opacity-80 group-hover:opacity-100">{item.tech}</h1>
+                                        <Icon className="text-5xl text-center w-full text-[#1247a5] dark:text-[#8fbfd9] opacity-90 group-hover:opacity-100" />
                                     </li>
 
                                 )
                             })}
 
-                 </ul> }
+                    </ul>}
 
-      
+
             </section>
         </Element>
     )
