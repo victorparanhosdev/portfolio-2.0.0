@@ -1,0 +1,18 @@
+.dark .swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.dark .swiper-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(to left, #f0f6ff80, rgba(0, 0, 0, 0));
+        border-radius: 0.75rem;
+}
+
+
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(to right, #f0f6ff80, rgba(0, 0, 0, 0));
+    border-radius: 0.75rem;
+}

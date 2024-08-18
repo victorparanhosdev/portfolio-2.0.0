@@ -62,7 +62,7 @@ const config: Config = {
       },
       gridTemplateColumns:{
         projects: 'repeat(auto-fit, minmax(340px, 1fr))',
-        skills: 'repeat(auto-fit, minmax(100px, 1fr))'
+        skills: 'repeat(auto-fit, minmax(120px, 1fr))'
       },
       keyframes: {
         overlayShow: {
