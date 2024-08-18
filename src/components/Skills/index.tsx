@@ -7,20 +7,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay, Mousewheel, EffectCoverflow, EffectCards } from 'swiper/modules';
 import { iconsSkills } from "../../../public/iconSkills";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import media from 'use-media'
+import useMedia from 'use-media'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-coverflow';
 import './stylesSwiper.css'
 
+
 export const Skills = () => {
-    const isMedia = media({ minWidth: '500px' })
+    const isMedia = useMedia({ minWidth: '500px' })
 
     return (
         <Element name="skills" className="element">
             <section data-aos="fade-up" className="container-personalizado py-32">
-                <h1 className="text-3xl mb-20  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidades</h1>
+                <h1 className="text-3xl mb-6  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidades</h1>
+                <div className="flex gap-2 items-center mb-10">
+                    <h1 className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit similique magnam ipsam magni necessitatibus aliquid cupiditate eos nesciunt. Reprehenderit quos quia illo aliquid voluptatem molestiae voluptatum esse laboriosam nostruLorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit similique magnam ipsam magni necessitatibus aliquid cupiditate eos nesciunt. Reprehenderit quos quia illo aliquid voluptatem molestiae voluptatum esse laboriosam nostrum.</h1>
+                 </div>
                 {!isMedia ? 
                 <Swiper
                     className="text-white mySwiper min-h-[150px] "
@@ -54,7 +58,7 @@ export const Skills = () => {
 
                             return (
                                 <SwiperSlide key={item.tech}> <li
-                                    className="rounded-xl grid justify-center content-center dark:bg-gray-dark-200  h-[120px] min-w-[120px] dark:border-0 border bg-[#f0f6ff80] border-[#2c96df78] text-blue-light-100 dark:text-gray-dark-300 group text-center transition-colors group ">
+                                    className="rounded-xl grid justify-center content-center dark:bg-gray-dark-200  min-h-[120px] min-w-[120px] dark:border-0 border bg-[#f0f6ff80] border-[#2c96df78] text-blue-light-100 dark:text-gray-dark-300 group text-center transition-colors group ">
                                     <h1 className="text-center mb-2 text-base md:text-lg font-bold text-[#1247a5] dark:text-[#8fbfd9] opacity-80 group-hover:opacity-100">{item.tech}</h1>
                                     {item.imagem ? <FontAwesomeIcon className="text-6xl text-center w-full text-[#1247a5] dark:text-[#8fbfd9] opacity-90 group-hover:opacity-100" icon={item.imagem} /> : <h1 className="text-[#1247a5] dark:text-[#8fbfd9] ">{item.tech}</h1>}
                                 </li>
@@ -76,7 +80,8 @@ export const Skills = () => {
                             })}
 
                  </ul> }
-                
+
+      
             </section>
         </Element>
     )

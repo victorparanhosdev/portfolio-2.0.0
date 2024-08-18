@@ -16,3 +16,11 @@
     background-image: linear-gradient(to right, #f0f6ff80, rgba(0, 0, 0, 0));
     border-radius: 0.75rem;
 }
+
+.dark .swiper-pagination-bullet {
+    background: #41bbff
+}
+
+.swiper-pagination-bullet {
+    background: #0062ff
+}
