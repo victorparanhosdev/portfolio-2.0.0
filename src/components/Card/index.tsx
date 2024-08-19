@@ -3,9 +3,12 @@ import { Button } from "../Button"
 import { GithubLogo, Link } from "@phosphor-icons/react/dist/ssr"
 
 
-type CardProps = ComponentProps<'div'> & {}
+type CardProps = ComponentProps<'div'> & {
+    projetos?: any[]
+}
 
-export const Card = ({...props}: CardProps) => {
+export const Card = ({projetos, ...props}: CardProps) => {
+    
     return(
         <div {...props} className="w-full">
             <div  className="flex items-center justify-center border-l-2 dark:border-blue-dark-100 w-full h-[200px] border-blue-light-200 bg-[#f0f6ff] dark:bg-gray-dark-100">

@@ -1,9 +1,12 @@
-'use client'
+
 import { Element } from "react-scroll"
 import { Card } from "../Card"
 import { MdOutlineDoubleArrow } from "react-icons/md"
 import Link from "next/link"
-export const Projects = () => {
+export const Projects = async () => {
+    const dados = await fetch('https://api.github.com/users/victorparanhosdev/repos').then(data => data.json())
+
+    
     return(
         <Element name="projects" className="element">
         <section className="container-personalizado py-32 flex flex-col">

@@ -5,7 +5,7 @@ import { Home } from "@/components/Home";
 import { Projects } from "@/components/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect} from "react";
+import { useEffect, useState} from "react";
 import { Header } from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Footer } from "@/components/Footer";
@@ -13,6 +13,7 @@ import { Skills } from "@/components/Skills";
 
 
 export default function HomePage() {
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
 
@@ -20,10 +21,16 @@ export default function HomePage() {
       easing: "linear",
       once: false,
       offset: 0,
-      duration: 500,
+      duration: 600,
       
     });
+    setIsLoaded(true)
+    
   }, []);
+
+  if(!isLoaded) {
+    return
+  }
 
   return (
     <>
@@ -34,7 +41,6 @@ export default function HomePage() {
         <Experience />
         <Skills/>
         <Projects />
-
       </main>
       <Footer />
       <ScrollToTop />
