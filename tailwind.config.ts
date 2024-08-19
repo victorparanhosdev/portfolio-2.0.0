@@ -65,9 +65,14 @@ const config: Config = {
         skills: 'repeat(auto-fit, minmax(120px, 1fr))'
       },
       keyframes: {
+        
         overlayShow: {
           from: { opacity: '0' },
           to: { opacity: '1' },
+        },
+        arrowRight: {
+          from: { opacity: '0', transform: 'translateX(-40px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
         },
         contentShow: {
           from: { opacity: '0', transform: 'translateX(150%)' },
@@ -82,6 +87,7 @@ const config: Config = {
         overlayShow: 'overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
         contentShow: 'contentShow 350ms cubic-bezier(0.16, 1, 0.3, 1)',
         slideDownAndFade: 'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        arrowRight: ' arrowRight 2.5s infinite cubic-bezier(0.16, 1, 0.3, 1)'
       },
       minHeight: {
         'homescreen': 'calc((100vh - 128px))'

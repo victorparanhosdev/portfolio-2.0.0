@@ -1,6 +1,7 @@
 import { ComponentProps } from "react"
 import { Button } from "../Button"
-import { GithubLogo, Link } from "@phosphor-icons/react"
+import { GithubLogo, Link } from "@phosphor-icons/react/dist/ssr"
+
 
 type CardProps = ComponentProps<'div'> & {}
 
