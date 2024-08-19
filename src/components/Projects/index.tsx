@@ -19,7 +19,7 @@ export const Projects = async () => {
                 }
             </div>
 
-            <Link href={"/projetos"} className="transition mt-20 sm:ml-auto sm:mr-0 py-4 px-6 text-lg m-auto sm:text-xl font-bold dark:text-gray-dark-300 dark:hover:text-gray-dark-400 cursor-pointer flex gap-3 items-center hover:text-blue-light-200 text-blue-light-100"><MdOutlineDoubleArrow className="animate-arrowRight overflow-hidden text-current text-xl"/>Mais Projetos...</Link >
+            <Link href={"/projetos"} scroll={false} className="transition mt-20 sm:ml-auto sm:mr-0 py-6 px-6 text-lg m-auto sm:text-xl font-bold dark:text-gray-dark-300 dark:hover:text-gray-dark-400 cursor-pointer flex gap-3 items-center hover:text-blue-light-200 text-blue-light-100"><MdOutlineDoubleArrow className="animate-arrowRight overflow-hidden text-current text-xl lg:text-base"/>Mais Projetos...</Link >
 
         </section>
         </Element>

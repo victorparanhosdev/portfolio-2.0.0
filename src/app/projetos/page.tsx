@@ -14,7 +14,7 @@ export default async function AllProjetos(){
                 <h1 className="text-center text-4xl mb-10">Todos os projetos</h1>
 
             <div className="flex items-center mb-10 w-full gap-5">
-            <Link href={"/"} className="p-5 text-white flex items-center gap-3"><FaArrowLeft /> Voltar</Link>
+            <Link scroll={false} href={"/"} className="p-5 text-white flex items-center gap-3"><FaArrowLeft /> Voltar</Link>
 
             <div className="flex-1">
                 <label htmlFor="search" className="sr-only">Buscar por nome:</label>
