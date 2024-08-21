@@ -13,7 +13,7 @@ import { Skills } from "@/components/Skills";
 
 
 export default function HomePage() {
-  //const [isLoaded, setIsLoaded] = useState(false);
+
 
   useEffect(() => {
 
@@ -24,14 +24,10 @@ export default function HomePage() {
       duration: 600,
       
     });
-    //setIsLoaded(true)
+
     
   }, []);
 
-  /*if(!isLoaded) {
-    return
-  }
- */
   return (
     <>
       <Header />

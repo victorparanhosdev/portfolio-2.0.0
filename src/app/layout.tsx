@@ -23,7 +23,6 @@ export default function RootLayout({
             attribute="class"
             defaultTheme="dark"
             enableSystem
-
           >
         <div>
         {children}
