@@ -7,7 +7,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 export default async function AllProjetos(){
 
-    //const dados = await ApiDataGithub()
+    const dados = await ApiDataGithub()
 
 
     return (
@@ -27,9 +27,9 @@ export default async function AllProjetos(){
             </div>
 
             <div className="grid md:grid-cols-projects gap-y-16 gap-x-8">
-                {Array.from({length: 20}).map((_,index)=> {
+                {dados.map((repo,index)=> {
                     return(
-                        <Card key={index}/>
+                        <Card projetos={repo} key={index}/>
                     )
                 })}
             </div>
