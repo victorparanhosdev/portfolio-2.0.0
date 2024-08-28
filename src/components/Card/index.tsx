@@ -44,7 +44,7 @@ export const Card = ({projetos, ...props}: CardProps) => {
             <p className="mt-6 dark:text-blue-dark-100 text-blue-light-200">Tecnologias usadas no projeto</p>
             <div className="max-[330px]:grid mt-10 flex max-[330px]:gap-4 gap-6">
                 {projetos?.homepage && <a href={projetos?.homepage} target="_blank" className="max-[430px]:w-full"><Button iconLeft={Link} state="primary">Visualizar</Button></a>}
-                {projetos?.html_url && <a href={projetos?.html_url} target="_blank" className="max-[430px]:w-full><Button iconLeft={GithubLogo} state="outline">Código</Button></a>}
+                {projetos?.html_url && <a href={projetos?.html_url} target="_blank" className="max-[430px]:w-full"><Button iconLeft={GithubLogo} state="outline">Código</Button></a>}
             </div>
         </div>
     )
