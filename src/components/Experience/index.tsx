@@ -1,4 +1,3 @@
-'use client'
 import { Element } from "react-scroll"
 import { TabsNav } from "../Tabs"
 

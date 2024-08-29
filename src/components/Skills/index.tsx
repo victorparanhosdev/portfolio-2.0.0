@@ -1,8 +1,4 @@
-'use client'
-
 import { Element } from "react-scroll"
-
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay, Mousewheel, EffectCoverflow } from 'swiper/modules';
 import { iconsSkills } from "../../../public/iconSkills";

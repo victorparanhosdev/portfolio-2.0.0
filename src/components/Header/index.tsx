@@ -1,5 +1,3 @@
-'use client'
-
 import { Link } from "react-scroll";
 import { Divide as Hamburger } from 'hamburger-react'
 import { useEffect, useState } from "react";

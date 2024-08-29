@@ -1,5 +1,3 @@
-'use client'
-
 import { Element } from "react-scroll"
 import { Button } from "../Button"
 import { DownloadSimple, MapPin} from "@phosphor-icons/react"

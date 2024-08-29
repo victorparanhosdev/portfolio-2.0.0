@@ -1,51 +1,23 @@
-'use client'
-import { useState, useEffect } from 'react';
 import { CardAllProjects } from "@/components/CardAllProjects";
 import { GitHubRepo } from "@/types/GithubTypes";
-import { MagnifyingGlass } from "@phosphor-icons/react";
+import { MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
+
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
-import AOS from 'aos';
-import Loading from '../loading';
 
-export default function AllProjetos() {
-    const [dados, setDados] = useState<GitHubRepo[]>([]);
-    const [query, setQuery] = useState('');
-    const [filteredRepos, setFilteredRepos] = useState<GitHubRepo[]>([]);
+export default async function AllProjetos() {
 
-    useEffect(() => {
-        async function fetchRepos() {
-            try {
-                const response = await fetch('https://api.github.com/users/victorparanhosdev/repos?sort=updated_at');
-                if (!response.ok) {
-                    throw new Error('Erro ao buscar os dados');
-                }
-                const data: GitHubRepo[] = await response.json();
-                setDados(data);
-            } catch (error) {
-                console.error(error);
-            }
+    const response: GitHubRepo[] = await fetch('https://api.github.com/users/victorparanhosdev/repos?sort=updated_at').then(data => {
+        if (!data.ok) {
+            throw new Error('Erro ao buscar os dados');
         }
- 
+        
+        return data.json()
+    }).catch((error)=> console.log(error));;
 
-        fetchRepos();
-    }, []);
-
-    useEffect(() => {
-        const results = dados.filter(repo =>
-            repo.name.toLowerCase().includes(query.toLowerCase())
-        );
-        setFilteredRepos(results);
-    }, [query, dados]);
-
-    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setQuery(e.target.value);
-    };
 
     return (
-        <>
-        {
-            dados.length === 0 ? <Loading/> : <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300">
+      <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300">
             <section className="py-16 container-personalizado">
                 <h1 className="text-center text-3xl mb-8 text-blue-light-400 dark:text-gray-dark-400 font-extrabold">
                     Todos os projetos
@@ -62,8 +34,6 @@ export default function AllProjetos() {
                             type="text"
                             placeholder="Digite o nome do projeto"
                             id="search"
-                            value={query}
-                            onChange={handleSearchChange}
                             className="pl-4 py-2.5 pr-12 w-full rounded-lg focus:outline-none border dark:border-gray-dark-300 dark:focus:border-blue-dark-100 transition-all hover:bg-[#f0f6ff38] duration-500 dark:focus:ring-1 dark:focus:ring-offset-blue-dark-100 dark:text-gray-dark-400 dark:hover:bg-black/15 border-blue-light-100 focus:ring-1 focus:ring-[#009fff4f] text-blue-light-400"
                         />
                         <button type="submit" className="absolute top-[50%] -translate-y-[50%] right-[15px] z-[2] cursor-pointer text-blue-light-200 dark:text-gray-dark-400">
@@ -73,15 +43,13 @@ export default function AllProjetos() {
                 </div>
 
                 <div className="grid grid-cols-allprojects gap-4">
-                    {filteredRepos.map(repo => (
+     
+                    {response.map(repo => (
                         <CardAllProjects data-aos="flip-left" data-aos-once="false" data-aos-duration="300" key={repo.id} projects={repo} />
                     ))}
+            
                 </div>
             </section>
         </main>
-        }
-        
-        
-        </>
     );
 }
