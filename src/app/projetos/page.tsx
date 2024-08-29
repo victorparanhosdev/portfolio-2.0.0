@@ -1,23 +1,14 @@
-import { CardAllProjects } from "@/components/CardAllProjects";
-import { GitHubRepo } from "@/types/GithubTypes";
+
 import { MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
-
 import Link from "next/link";
+import { Suspense } from "react";
 import { FaArrowLeft } from "react-icons/fa";
+import { SkeletonAllProjects } from "./SkeletonAllProjects";
+import { ApiAllProjects } from "./ApiAllProjects";
 
-export default async function AllProjetos() {
-
-    const response: GitHubRepo[] = await fetch('https://api.github.com/users/victorparanhosdev/repos?sort=updated_at').then(data => {
-        if (!data.ok) {
-            throw new Error('Erro ao buscar os dados');
-        }
-        
-        return data.json()
-    }).catch((error)=> console.log(error));;
-
-
+export default function AllProjetos() {
     return (
-      <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300">
+        <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300">
             <section className="py-16 container-personalizado">
                 <h1 className="text-center text-3xl mb-8 text-blue-light-400 dark:text-gray-dark-400 font-extrabold">
                     Todos os projetos
@@ -42,13 +33,9 @@ export default async function AllProjetos() {
                     </form>
                 </div>
 
-                <div className="grid grid-cols-allprojects gap-4">
-     
-                    {response.map(repo => (
-                        <CardAllProjects data-aos="flip-left" data-aos-once="false" data-aos-duration="300" key={repo.id} projects={repo} />
-                    ))}
-            
-                </div>
+                <Suspense fallback={<SkeletonAllProjects />}>
+                    <ApiAllProjects />
+                </Suspense>
             </section>
         </main>
     );
