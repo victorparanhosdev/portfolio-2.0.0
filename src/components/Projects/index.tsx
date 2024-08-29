@@ -18,6 +18,8 @@ export const Projects = () => {
                 }
                 const data: GitHubRepo[] = await response.json();
                 const filtered = data.filter(repo => repo.topics.includes('portfolio')).slice(0, 6);
+
+                console.log(filtered)
                 setProjects(filtered);
             } catch (error) {
                 console.log(error);

@@ -75,7 +75,9 @@ export const Skills = () => {
                                     <li data-aos="flip-up" data-aos-duration='400' key={item.tech}
                                         className=" rounded-xl grid justify-items-center justify-center content-center dark:bg-gray-dark-200  min-h-[120px] dark:border-0 border bg-[#f0f6ff80] border-[#2c96df78] text-blue-light-100 dark:text-gray-dark-300 group text-center transition-colors group ">
                                         <h1 className="text-center mb-2 font-bold text-[#1247a5] dark:text-[#8fbfd9] opacity-80 group-hover:opacity-100">{item.tech}</h1>
-                                        <Icon className="text-5xl text-center w-full text-[#1247a5] dark:text-[#8fbfd9] opacity-90 group-hover:opacity-100" />
+                                        <div className="h-12 min-w-12">
+                                        <Icon className="text-center w-full h-full text-[#1247a5] dark:text-[#8fbfd9] opacity-90 group-hover:opacity-100" />
+                                        </div>
                                     </li>
 
                                 )
