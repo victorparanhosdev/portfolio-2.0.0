@@ -5,7 +5,7 @@ import { Home } from "@/components/Home";
 import { Projects } from "@/components/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState} from "react";
+import { useEffect} from "react";
 import { Header } from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Footer } from "@/components/Footer";

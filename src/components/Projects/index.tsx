@@ -3,34 +3,39 @@ import { Element } from "react-scroll";
 import { Card } from "../Card";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import Link from "next/link";
-import ApiDataGithub from "../ApiRepos";
 import { GitHubRepo } from "@/types/GithubTypes";
 
 
 export const Projects = () => {
-    const [filterData, setFilterData] = useState<GitHubRepo[]>([]);
-
+    const [filterData, setFilterData] = useState<GitHubRepo[] | null>(null);
+  
     useEffect(() => {
         const fetchData = async () => {
-            const dados = await ApiDataGithub();
-            const filtered = dados.filter(repo => repo.topics.includes('portfolio'));
-            setFilterData(filtered);
-
-
-
+            try {
+                const response = await fetch('https://api.github.com/users/victorparanhosdev/repos?sort=created_at');
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar os dados');
+                }
+                const dados: GitHubRepo[] = await response.json();
+                const filtered = dados.filter(repo => repo.topics.includes('portfolio')).slice(0, 6);
+                setFilterData(filtered);
+            } catch (error) {
+                console.error(error);
+               
+            }
         };
-
+    
         fetchData();
     }, []);
+ 
 
-    console.log(filterData)
     return (
         <Element name="projects" className="element">
             <section className="container-personalizado py-32 flex flex-col">
                 <h1 className="text-3xl dark:text-gray-dark-400 font-extrabold mb-6 text-blue-light-400">Projetos</h1>
                 <div className="grid md:grid-cols-projects gap-y-16 gap-x-8">
                     {
-                    filterData.map(repo => {
+                    filterData?.map(repo => {
                         return(
                             <Card projetos={repo} data-aos="flip-left" key={repo.id} />
                         )
