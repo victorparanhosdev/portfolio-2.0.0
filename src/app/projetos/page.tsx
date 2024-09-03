@@ -3,8 +3,9 @@ import { MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Suspense } from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import { SkeletonAllProjects } from "./SkeletonAllProjects";
+
 import { ApiAllProjects } from "./ApiAllProjects";
+import { SkeletonAllProjects } from "./SkeletonAllProjects";
 
 export default function AllProjetos() {
     return (

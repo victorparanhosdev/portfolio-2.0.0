@@ -11,6 +11,7 @@ export async function ApiAllProjects() {
         return data.json()
     }).catch((error)=> console.log(error));
 
+
     return(
         <div className="grid grid-cols-allprojects gap-4">
         {response.map(repo => (

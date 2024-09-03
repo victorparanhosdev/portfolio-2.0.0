@@ -1,19 +1,21 @@
-import { Skeleton } from "@/components/Skeleton"
+
 
 export const SkeletonAllProjects = () => {
     return (
         <div className="grid grid-cols-allprojects gap-4">
             {Array.from({ length: 30 }).map((_, index) => {
                 return (
-                    <div key={index} className=" dark:hover:shadow-gray-dark-200 p-3 flex flex-col border dark:border-0 rounded-xl dark:bg-gray-dark-100 min-h-[120px] bg-[#f0f6ff47] space-y-3">
-                        <div className="flex items-center gap-3">
-                            <Skeleton className="min-w-5 h-5 rounded-md" />
-                            <Skeleton className="h-7 w-full rounded-md" />
+                    <div key={index}
+                        className={`shadow-md transition-shadow duration-200 hover:shadow-[#2c96df78] dark:hover:shadow-gray-dark-200 border p-3 flex flex-col rounded-xl dark:bg-gray-dark-100 min-h-[120px] dark:border-0 bg-[#f0f6ff47] border-[#2c96df78] animate-pulse`}
+                    >
+                        <div className="flex items-center gap-3 mb-3">
+                            <div className="w-5 h-5 bg-gray-300 dark:bg-gray-dark-500 rounded-full animate-pulse"></div>
+                            <div className="h-6 w-3/4 bg-gray-300 dark:bg-gray-dark-500 rounded-lg animate-pulse"></div>
                         </div>
-                        <Skeleton className="h-8 w-full  rounded-md" />
+                        <div className="text-xs h-12 w-full bg-gray-300 dark:bg-gray-dark-500 rounded-lg mb-3 animate-pulse"></div>
                         <div className="flex gap-3 mt-auto">
-                            <Skeleton className="h-9 w-9 rounded-full" />
-                            <Skeleton className="h-9 w-9 rounded-full" />
+                            <div className="h-8 w-8 bg-gray-300 dark:bg-gray-dark-500 rounded-full animate-pulse"></div>
+                            <div className="h-8 w-8 bg-gray-300 dark:bg-gray-dark-500 rounded-full animate-pulse"></div>
                         </div>
                     </div>
                 )
