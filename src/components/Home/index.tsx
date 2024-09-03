@@ -44,12 +44,12 @@ export const Home = () => {
             </div>
 
             <ul data-aos="fade-right" className="w-full justify-center md:justify-start flex items-center gap-5 dark:text-blue-dark-100">
-                    <li><a href=""><XLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition  " size={28} /></a></li>
-                    <li><a href=""><WhatsappLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><FacebookLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><GithubLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><InstagramLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
-                    <li><a href=""><LinkedinLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
+                    
+                    <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5575991258651&text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20seus%20serviços."><WhatsappLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/victorparanhos94/"><LinkedinLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
+                    <li><a target="_blank" href="https://github.com/victorparanhosdev"><GithubLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
+                    <li><a target="_blank"  href="https://www.instagram.com/victorparanhos_94/"><InstagramLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/VictorParanhosCosta/"><FacebookLogo className="dark:text-blue-dark-100 dark:hover:opacity-100 dark:opacity-80 text-blue-light-200 hover:opacity-80  hover:scale-110 transition " size={28} /></a></li>
 
                 </ul>
             </div>
