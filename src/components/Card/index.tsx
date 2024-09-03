@@ -35,7 +35,7 @@ export const Card = ({ projetos, ...props }: CardProps) => {
                     projetos.topics.length === 1 && projetos.topics.includes('portfolio') ? (
                         <span
               
-                        className="text-sm border dark:border-gray-800 bg-[#f0f6ff66] dark:bg-transparent border-[#2c96df78] rounded-lg py-1 px-2 font-medium capitalize"
+                        className="text-sm border dark:border-gray-800 bg-[#f0f6ff66] dark:bg-[#060c1452] border-[#2c96df78] rounded-lg py-1 px-2 font-medium capitalize"
                     >
                        {projetos.language}
                     </span>
@@ -43,7 +43,7 @@ export const Card = ({ projetos, ...props }: CardProps) => {
                         projetos.topics.every(tag => tag === 'portfolio') ? (
                             <span
  
-                            className="text-sm border dark:border-gray-800 bg-[#f0f6ff66] dark:bg-transparent border-[#2c96df78] rounded-lg py-1 px-2 font-medium capitalize"
+                            className="text-sm border dark:border-gray-800 bg-[#f0f6ff66] dark:bg-[#060c1452] border-[#2c96df78] rounded-lg py-1 px-2 font-medium capitalize"
                         >
                             {projetos.language}
                         </span>
@@ -54,7 +54,7 @@ export const Card = ({ projetos, ...props }: CardProps) => {
                                 return (
                                     <span
                                         key={index}
-                                        className="text-sm border dark:border-gray-800 bg-[#f0f6ff66] dark:bg-transparent border-[#2c96df78] rounded-lg py-1 px-2 font-medium capitalize"
+                                        className="text-sm border dark:border-gray-800 bg-[#f0f6ff66] dark:bg-[#060c1452] border-[#2c96df78] rounded-lg py-1 px-2 font-medium capitalize"
                                     >
                                         {tag}
                                     </span>
