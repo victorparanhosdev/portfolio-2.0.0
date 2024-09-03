@@ -16,7 +16,7 @@ export const About = () => {
 
 
                 <p className="text-base md:text-lg text-justify">
-                    Olá, sou Victor Paranhos, formado em Análise e Desenvolvimento de Sistemas pela UNINTER e apaixonado por tecnologia. Tenho me aprofundado em diversas áreas através dos cursos de programação, onde já acumulo experiências em JavaScript, React.js, Next.js, Tailwind, TypeScript, Node.js, Python, Java, SQL, HTML e CSS.
+                    Olá, sou Victor Paranhos, formado em Análise e Desenvolvimento de Sistemas pela UNINTER e apaixonado por tecnologia. Tenho me aprofundado em diversas tecnologias através dos cursos de programação, onde já acumulo experiências em JavaScript, React.js, Next.js, Tailwind, TypeScript, Node.js, Python, Java, SQL, HTML e CSS.
                 </p>
                 <br />
 
