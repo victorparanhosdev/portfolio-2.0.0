@@ -26,12 +26,7 @@ export const About = () => {
                 <br />
 
                 <p className="text-base md:text-lg text-justify">
-                    Sempre busco novos desafios para ampliar meus conhecimentos e criar soluções práticas e eficientes.
-                </p>
-                <br />
-
-                <p className="text-base md:text-lg text-justify">
-                    Algumas das minhas principais características incluem: proatividade, organização, responsabilidade, trabalho em equipe, e uma grande capacidade de aprendizado contínuo.
+                    Sempre busco novos desafios para ampliar meus conhecimentos e criar soluções práticas e eficientes. Algumas das minhas principais características incluem: proatividade, organização, responsabilidade, trabalho em equipe, e uma grande capacidade de aprendizado contínuo.
                 </p>
                 <br />
 
