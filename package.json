@@ -29,6 +29,7 @@
     "react-simple-typewriter": "^5.0.1",
     "swiper": "^11.1.9",
     "tailwind-variants": "^0.2.1",
+    "use-debounce": "^10.0.3",
     "use-media": "^1.5.0"
   },
   "devDependencies": {
