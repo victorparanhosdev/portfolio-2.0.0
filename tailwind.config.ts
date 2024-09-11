@@ -13,7 +13,7 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "linear-blue": 'linear-gradient(90deg, #41bbff, #78d5ff);',
         "linear-gray": "linear-gradient(180deg,#121212,#1a1a1a, #121212)",
         "linear-gray-2": "linear-gradient(0deg,#121212,#262626)",
