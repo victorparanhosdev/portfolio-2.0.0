@@ -12,7 +12,7 @@ export const Home = () => {
         <section className="transition-all container-personalizado pt-32 md:pt-20  w-full h-full">
             <div className="block md:grid grid-flow-col md:gap-10 items-center justify-stretch">
 
-            <div className="min-w-[250px] max-w-[420px] h-[420px] md:max-w-[600px] -mt-12 m-auto md:mt-0 flex md:grid justify-center md:after:hidden after:content-[''] after:block after:absolute after:bottom-0 relative dark:after:h-32 after:h-40 after:w-full dark:after:bg-linear-gray-3 after:bg-linear-light after:z-[1] md:h-full md:w-[400px]">
+            <div className="min-w-[250px] max-w-[420px] h-[420px] md:max-w-[600px] -mt-12 m-auto md:mt-0 flex md:grid justify-center md:after:hidden after:content-[''] after:block after:absolute after:bottom-0 relative dark:after:h-32 after:h-60 after:w-full dark:after:bg-linear-gray-3 after:bg-linear-light after:z-[1] md:h-full md:w-[400px]">
             <Image data-aos="flip-left" priority width={460} height={460} src={FotoPerfil.src} className="hidden dark:block order-1  inset-0 object-cover object-top w-full h-full" alt="Foto de Perfil" />
             <Image data-aos="flip-left" priority width={460} height={460} src={FotoPerfil2.src} className="block dark:hidden order-1  inset-0 object-cover object-top w-full h-full" alt="Foto de Perfil" />
 

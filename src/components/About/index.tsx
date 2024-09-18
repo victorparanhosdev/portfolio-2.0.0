@@ -21,7 +21,7 @@ export const About = () => {
                 <br />
 
                 <p className="text-base md:text-lg text-justify">
-                    Atualmente, atuo como Desenvolvedor Jr. na Stefanini, mas minha trajetória inclui 10 anos de experiência como técnico de informática na Dires e um estágio de 6 meses como suporte técnico na empresa Vtrina. Essas experiências têm sido fundamentais para meu crescimento e aprendizado constante.
+                    Atualmente, atuo como Desenvolvedor Jr. na Stefanini, mas minha trajetória inclui 10 anos de experiência como técnico de informática na Dires e um estágio de 6 meses como suporte técnico na empresa Vtrina. Essas experiências têm sido fundamentais para meu crescimento profissional e um aprendizado constante.
                 </p>
                 <br />
 
