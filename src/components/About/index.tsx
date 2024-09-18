@@ -15,25 +15,10 @@ export const About = () => {
                 </div>
 
 
-                <p className="text-base md:text-lg text-justify">
-                    Olá, sou Victor Paranhos, formado em Análise e Desenvolvimento de Sistemas pela UNINTER e apaixonado por tecnologia. Tenho me aprofundado em diversas tecnologias através dos cursos de programação, onde já acumulo experiências em JavaScript, React.js, Next.js, Tailwind, TypeScript, Node.js, Python, Java, SQL, HTML e CSS.
+                <p className="text-base md:text-lg text-justify ">
+                Sou <strong className="font-extrabold">Victor Paranhos</strong>, formado em Análise e Desenvolvimento de Sistemas pela UNINTER, com uma paixão por tecnologia e inovação. Tenho <strong className="font-extrabold">conhecimento sólido em desenvolvimento front-end e back-end</strong>, trabalhando com JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML e CSS, adquiridos por meio de cursos e estudos contínuos. Atualmente, sou <strong className="font-extrabold">Desenvolvedor Jr.</strong> na Stefanini, e conto com <strong className="font-extrabold">10 anos de experiência</strong> como técnico de informática na Dires, além de um estágio em suporte técnico na Vtrina. Estou sempre em busca de novos desafios e aprendizado, e gosto de colaborar em projetos que trazem impacto real. <br /><br /> Quer bater um papo? Fique à vontade para entrar em contato: <a className="hover:underline text-blue-light-200 dark:text-blue-dark-100" href="mailto:victor_paranhos@hotmail.com">victor_paranhos@hotmail.com</a> 
                 </p>
-                <br />
-
-                <p className="text-base md:text-lg text-justify">
-                    Atualmente, atuo como Desenvolvedor Jr. na Stefanini, mas minha trajetória inclui 10 anos de experiência como técnico de informática na Dires e um estágio de 6 meses como suporte técnico na empresa Vtrina. Essas experiências têm sido fundamentais para meu crescimento profissional e um aprendizado constante.
-                </p>
-                <br />
-
-                <p className="text-base md:text-lg text-justify">
-                    Sempre busco novos desafios para ampliar meus conhecimentos e criar soluções práticas e eficientes. Algumas das minhas principais características incluem: proatividade, organização, responsabilidade, trabalho em equipe, e uma grande capacidade de aprendizado contínuo.
-                </p>
-                <br />
-
-                <p className="text-base md:text-lg text-justify">
-                    Tem algo que você gostaria de saber ou discutir? Entre em contato comigo por email: <a className="hover:underline text-blue-light-200 dark:text-blue-dark-100" href="mailto:victor_paranhos@hotmail.com">victor_paranhos@hotmail.com</a> e vamos conversar!
-                </p>
-
+            
 
                 <a href="/curriculo.pdf" download="VictorParanhos(Curriculo).pdf" ><Button iconLeft={DownloadSimple} state="primary" className="mt-12">Baixar currículo</Button></a>
 

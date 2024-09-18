@@ -18,7 +18,7 @@ const config: Config = {
         "linear-gray": "linear-gradient(180deg,#121212,#1a1a1a, #121212)",
         "linear-gray-2": "linear-gradient(0deg,#121212,#262626)",
         "linear-gray-3": "linear-gradient(180deg, rgba(18, 18, 18, 0) 1%, #121212 37%)",
-        "linear-light": "linear-gradient(180deg, hsla(0, 0%, 100%, 2%) 35%, #fff 70%)",
+        "linear-light": "linear-gradient(180deg, hsla(0, 0%, 100%, 2%) 35%, #fff 92%)",
         'linear-button-light': "linear-gradient(90deg, #009bff, #0062ff)",
         "linear-footer": "linear-gradient(180deg, #ffffff, #c5d9f9)"
     },

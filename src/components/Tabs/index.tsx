@@ -36,9 +36,9 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               </h1>
               <span className="dark:text-gray-dark-400 text-blue-light-100">Junho 2024 - Atual</span>
             </div>
-            <span className="dark:text-blue-dark-100 block text-md font-medium mt-6 text-blue-light-200 mb-8">
-              Stefanini
-            </span>
+            <div className='mt-6 mb-8'>
+              <span className="dark:text-blue-dark-100 text-md font-medium  text-blue-light-200 mr-1.5">Stefanini</span>  <span className='text-xs'>(Hibrido - Salvador/BA)</span>
+            </div>
             <ul className="list-disc list-inside">
               <li>Responsável pelo desenvolvimento do novo Sistema Estadual de Informações Ambientais e Recursos Hídricos (SEIA).</li>
               <li>Implementação de novas funcionalidades e correção de bugs.</li>
@@ -52,9 +52,9 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               </h1>
               <span className="dark:text-gray-dark-400 text-blue-light-100">Janeiro 2024 - Junho 2024</span>
             </div>
-            <span className="dark:text-blue-dark-100 block text-md font-medium mt-6 text-blue-light-200 mb-8">
-              Vtrina
-            </span>
+            <div className='mt-6 mb-8'>
+              <span className="dark:text-blue-dark-100 text-md font-medium  text-blue-light-200 mr-1.5">Vtrina</span>  <span className='text-xs'>(Home Office - Curitiba/PR)</span>
+            </div>
             <ul className="list-disc list-inside">
               <li>Identificar e diagnosticar problemas técnicos buscando soluções.</li>
               <li>Auxiliar o cliente na resolução de problemas.</li>
@@ -68,9 +68,9 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               </h1>
               <span className="dark:text-gray-dark-400 text-blue-light-100">Maio 2014 - Maio 2024</span>
             </div>
-            <span className="dark:text-blue-dark-100 block text-md font-medium mt-6 text-blue-light-200 mb-8">
-              Dires
-            </span>
+            <div className='mt-6 mb-8'>
+              <span className="dark:text-blue-dark-100 text-md font-medium  text-blue-light-200 mr-1.5">Dires</span>  <span className='text-xs'>(Presencial - Cruz das Almas/BA)</span>
+            </div>
             <ul className="list-disc list-inside">
               <li>Responsável por dar suporte e manutenção nos programas de saúde, mantendo sempre atualizados.</li>
               <li>Instalação e reparos de programas de saúde.</li>
