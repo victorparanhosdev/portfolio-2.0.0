@@ -125,7 +125,7 @@ export default function AllProjetos() {
                 </div>
                 {(dataRepos && dataRepos?.items.length > 0) && (totalPages > 1) &&
                     <div className='mt-8 flex justify-center'>
-                        <Pagination size"lg" showControls showShadow page={currentPage} initialPage={1} radius='md' total={totalPages} onChange={setCurrentPage} />
+                        <Pagination size="lg" showControls showShadow page={currentPage} initialPage={1} radius='md' total={totalPages} onChange={setCurrentPage} />
                     </div>
                 }
 
