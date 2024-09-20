@@ -3,7 +3,7 @@ import { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
-import { SkeletonAllProjects } from "./SkeletonAllProjects";
+import { SkeletonAllProjects, SkeletonTotalPages } from "./SkeletonAllProjects";
 import { CardAllProjects } from "@/components/CardAllProjects";
 import { GitHubRepo } from "@/types/GithubTypes";
 import { SmileySad } from "@phosphor-icons/react/dist/ssr";
@@ -77,7 +77,7 @@ export default function AllProjetos() {
     console.log('renderizei')
 
     return (
-        <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300">
+        <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300 min-h-screen">
             <section className="py-16 container-personalizado">
                 <h1 className="text-center text-3xl mb-8 text-blue-light-400 dark:text-gray-dark-400 font-extrabold">
                     Todos os projetos
@@ -107,9 +107,9 @@ export default function AllProjetos() {
                         </button>
                     </form>
                 </div>
-                 <span className="flex justify-end mb-4 text-blue-light-400 dark:text-gray-dark-400">
+            {loading ? <SkeletonTotalPages />  : (dataRepos && dataRepos.items.length > 0) && <span className="flex justify-end mb-4 text-blue-light-400 dark:text-gray-dark-400">
                     Página {currentPage} de {TotalPages}
-                </span>
+                </span>}
                 <div className="grid grid-cols-allprojects gap-4">
                     {loading ? (
                         <SkeletonAllProjects />
@@ -128,7 +128,11 @@ export default function AllProjetos() {
                 </div>
                 {(dataRepos && dataRepos?.items.length > 0) && (TotalPages > 1) &&
                     <div className='mt-8 flex justify-center'>
-                        <Pagination showControls showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
+                        <Pagination classNames={{
+                            cursor: 'bg-blue-light-200  dark:bg-blue-dark-100 dark:text-gray-dark-500',
+
+                            
+                        }} size='lg' showControls showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
                     </div>
                 }
 
