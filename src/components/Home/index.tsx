@@ -2,11 +2,16 @@ import { Element} from "react-scroll"
 import Image from "next/image"
 import { Typewriter } from 'react-simple-typewriter'
 import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo, WhatsappLogo } from "@phosphor-icons/react"
-
+import {useTranslations} from 'next-intl';
 import FotoPerfil from '../../../public/PARANHOS.png'
 import FotoPerfil2 from '../../../public/PARANHOS2.png'
 
-export const Home = () => {
+
+export const Home = ()  => {
+    
+    const t = useTranslations('HomePage');
+    console.log(t('title'))
+
     return(
         <Element name="home" className="element">
         <section className="transition-all container-personalizado pt-32 md:pt-20  w-full h-full">

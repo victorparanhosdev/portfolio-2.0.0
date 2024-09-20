@@ -27,8 +27,7 @@ export const SkeletonAllProjects = () => {
 export const SkeletonTotalPages = () => {
     return (
         <div className="flex justify-end mb-4 text-blue-light-400 dark:text-gray-dark-400 animate-pulse ">
-            <span className="h-6 w-20 bg-gray-300 dark:bg-gray-dark-500 rounded-lg"></span>
-
+            <span className="h-6 w-20 bg-gray-300 dark:bg-gray-dark-100 rounded-lg animate-pulse"></span>
         </div>
     )
 }

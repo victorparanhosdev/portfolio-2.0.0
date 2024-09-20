@@ -1,7 +1,6 @@
 'use client'
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
-import { Home } from "@/components/Home";
 import { Projects } from "@/components/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,11 +9,9 @@ import { Header } from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Footer } from "@/components/Footer";
 import { Skills } from "@/components/Skills";
+import { Home } from "@/components/Home";
 
-
-export default function HomePage() {
-
-
+export default function HomeApp() {
   useEffect(() => {
 
     AOS.init({
@@ -30,13 +27,13 @@ export default function HomePage() {
 
   return (
     <>
-      <Header />
+      <Header/>
       <main className="flex flex-col">
-        <Home />
-        <About />
-        <Experience />
+        <Home/>
+        <About/>
+        <Experience/>
         <Skills/>
-        <Projects />
+        <Projects/>
       </main>
       <Footer />
       <ScrollToTop />

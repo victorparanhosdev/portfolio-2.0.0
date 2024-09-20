@@ -11,7 +11,6 @@
   "dependencies": {
     "@nextui-org/pagination": "^2.0.36",
     "@nextui-org/react": "^2.4.8",
-    "@nextui-org/system": "^2.2.6",
     "@nextui-org/theme": "^2.2.11",
     "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-popover": "^1.1.1",
@@ -23,6 +22,7 @@
     "hamburger-react": "^2.5.1",
     "lucide-react": "^0.416.0",
     "next": "^14.2.12",
+    "next-intl": "^3.19.4",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-dom": "^18",

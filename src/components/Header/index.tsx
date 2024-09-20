@@ -6,6 +6,7 @@ import Logo from "../../../public/logo";
 import { SwitchTheme } from "../Switch";
 import { useTheme } from "next-themes";
 import { motion } from 'framer-motion'
+import { usePathname } from "next/navigation";
 export const links = [
     {
         title: "Inicio",
@@ -30,14 +31,16 @@ export const links = [
 
 
 ];
-
+const BR_FLAG_URL = "https://purecatamphetamine.github.io/country-flag-icons/3x2/BR.svg";
+const US_FLAG_URL = "https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg";
 
 export const Header = () => {
     const [isOpen, setOpen] = useState(false)
     const [DarkOrLight, setDarkOrLight] = useState(true)
     const [activeSection, setActiveSection] = useState('home');
     const { setTheme, theme } = useTheme()
-
+    const [language, setLanguage] = useState(BR_FLAG_URL)
+    const path = usePathname()
 
 
     useEffect(() => {
@@ -50,7 +53,13 @@ export const Header = () => {
 
     }, [])
 
-    
+    const toggleLanguage = () => {
+        setLanguage(prev => prev === BR_FLAG_URL ? US_FLAG_URL : BR_FLAG_URL);
+        if(language === BR_FLAG_URL) {
+            
+        }
+    };
+
 
 
     return (
@@ -65,13 +74,19 @@ export const Header = () => {
                             return (
                                 <li key={item.title}><Link className={`relative transition-colors cursor-pointer ${activeSection === item.link ? 'dark:text-gray-dark-400 text-blue-light-200' : 'dark:hover:text-gray-dark-400 hover:text-blue-light-200'}`} to={item.link} spy={true} smooth={true} duration={500} onSetActive={setActiveSection}>{item.title} {activeSection === item.link && <motion.div
                                     layoutId="activeTab2"
-                                    transition={{ duration: 0.5, delay: 0 }}      
+                                    transition={{ duration: 0.5, delay: 0 }}
                                     className=" absolute -bottom-6 right-0 left-0 w-full h-0.5 dark:bg-gray-dark-400 bg-blue-light-200"
                                 />}</Link>    </li>
                             )
                         })}
                     </ul>
-                    <div className="order-1 md:mr-6 flex items-center">
+
+                    <div className="order-1 md:mr-6 flex items-center gap-5">
+
+
+                        <button onClick={toggleLanguage}>
+                            <img src={language} className="h-6 w-6" alt="Country Flag" />
+                        </button>
                         <SwitchTheme checked={DarkOrLight} onCheckedChange={setDarkOrLight} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} />
                     </div>
                 </menu>

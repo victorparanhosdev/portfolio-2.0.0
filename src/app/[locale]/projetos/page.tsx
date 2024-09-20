@@ -74,7 +74,7 @@ export default function AllProjetos() {
     useEffect(() => {
         fetchProjects(querySearch);
     }, [currentPage]);
-    console.log('renderizei')
+
 
     return (
         <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300 min-h-screen">
