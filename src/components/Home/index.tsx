@@ -10,7 +10,7 @@ import FotoPerfil2 from '../../../public/PARANHOS2.png'
 export const Home = ()  => {
     
     const t = useTranslations('HomePage');
-    console.log(t('title'))
+
 
     return(
         <Element name="home" className="element">
