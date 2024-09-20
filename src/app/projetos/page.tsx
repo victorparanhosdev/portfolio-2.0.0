@@ -74,7 +74,7 @@ export default function AllProjetos() {
     }, [currentPage]);
 
     return (
-        <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300">
+        <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300 min-h-screen">
             <section className="py-16 container-personalizado">
                 <h1 className="text-center text-3xl mb-8 text-blue-light-400 dark:text-gray-dark-400 font-extrabold">
                     Todos os projetos
