@@ -28,12 +28,12 @@ export const Home = ()  => {
 
           
             <div className="-mt-16 md:mt-0 relative z-10 items-center flex w-full flex-col md:justify-items-startc text-center md:text-start md:place-items-baseline">
-            <h1 data-aos="fade-left" className="text-2xl font-medium ">Olá, eu sou</h1>
+            <h1 data-aos="fade-left" className="text-2xl font-medium ">{t('h1')}</h1>
             <p data-aos="fade-right"  className="text-blue-light-400 dark:text-gray-dark-400 text-4xl md:text-6xl mb-1 font-bold">Victor Paranhos</p>
             <div className="text-lg min-h-14 w-full mb-1 max-w-[415px]">
 
             <Typewriter data-aos="fade-left"
-            words={['Desenvolvedor FullStack', 'Graduado em Ánalise e Desenvolvimento de Sistemas']}
+            words={[t('p'), t('p2')]}
             loop={false}
             cursor={true}
             cursorStyle='|'

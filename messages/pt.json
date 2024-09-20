@@ -1,6 +1,7 @@
 {
-    "HomePage": {
-      "title": "OLa Mundo!",
-      "about": "Sobre a pagina"
-    }
+  "HomePage": {
+    "h1": "Olá, eu sou",
+    "p": "Desenvolvedor FullStack",
+    "p2": "Graduado em Ánalise e Desenvolvimento de Sistemas"
   }
+}
