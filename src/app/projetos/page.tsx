@@ -20,15 +20,16 @@ export default function AllProjetos() {
     const [dataRepos, setDataRepos] = useState<GitHubSearchResponse | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [currentPage, setCurrentPage] = useState<number>(1);
-    const [totalPages, setTotalPages] = useState<number>(1);
     const [querySearch, setquerySearch] = useState<string>('');
+
+    const perPage = 10;
+    const TotalPages =  Math.ceil(dataRepos?.total_count ? dataRepos?.total_count / perPage : 1 )
+
     const fetchProjects = async (query: string = '', page: number = 1) => {
         setLoading(true);
-
         try {
             const user = 'victorparanhosdev';
             const encodedQuery = encodeURIComponent(`${query} user:${user}`);
-            const perPage = 10;
             const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN || '';
             const response = await fetch(`https://api.github.com/search/repositories?q=${encodedQuery}&sort=updated_at&per_page=${perPage}&page=${page}`, {
                 headers: {
@@ -39,13 +40,10 @@ export default function AllProjetos() {
             if (!response.ok) {
                 throw new Error('Erro ao buscar os dados');
             }
-            const data: GitHubSearchResponse = await response.json();
-            setDataRepos(data);
-            setTotalPages(Math.ceil(data.total_count / perPage));
-             if (query !== querySearch) {
-            setCurrentPage(1);
-            }
 
+            const data: GitHubSearchResponse = await response.json();
+       
+            setDataRepos(data);
         } catch (err) {
             console.error(err);
         } finally {
@@ -53,28 +51,33 @@ export default function AllProjetos() {
         }
     };
 
+
+
     function handleSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
         const form = event.target as HTMLFormElement;
         const input = form.querySelector('input[id="search"]') as HTMLInputElement;
         const inputValue = input.value;
-        fetchProjects(inputValue, 1);
-        setCurrentPage(1);
+        fetchProjects(inputValue);
+        setCurrentPage(1)
+
     }
+
 
     const debouncedFetchProjects = useDebouncedCallback((event: ChangeEvent<HTMLInputElement>) => {
         const query = event.target.value;
-        fetchProjects(query, 1);
+        fetchProjects(query);
         setquerySearch(query)
+        setCurrentPage(1)
     }, 600);
 
     useEffect(() => {
-     
-        fetchProjects(querySearch, currentPage);
+        fetchProjects(querySearch);
     }, [currentPage]);
+    console.log('renderizei')
 
     return (
-        <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300 min-h-screen">
+        <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300">
             <section className="py-16 container-personalizado">
                 <h1 className="text-center text-3xl mb-8 text-blue-light-400 dark:text-gray-dark-400 font-extrabold">
                     Todos os projetos
@@ -104,9 +107,9 @@ export default function AllProjetos() {
                         </button>
                     </form>
                 </div>
-                {(dataRepos && dataRepos?.items.length > 0) && <span className="flex justify-end mb-4 text-blue-light-400 dark:text-gray-dark-400">
-                    Página {currentPage} de {totalPages}
-                </span>}
+                 <span className="flex justify-end mb-4 text-blue-light-400 dark:text-gray-dark-400">
+                    Página {currentPage} de {TotalPages}
+                </span>
                 <div className="grid grid-cols-allprojects gap-4">
                     {loading ? (
                         <SkeletonAllProjects />
@@ -123,9 +126,9 @@ export default function AllProjetos() {
                         </div>
                     )}
                 </div>
-                {(dataRepos && dataRepos?.items.length > 0) && (totalPages > 1) &&
+                {(dataRepos && dataRepos?.items.length > 0) && (TotalPages > 1) &&
                     <div className='mt-8 flex justify-center'>
-                        <Pagination size="lg" showControls showShadow page={currentPage} initialPage={1} radius='md' total={totalPages} onChange={setCurrentPage} />
+                        <Pagination showControls showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
                     </div>
                 }
 
