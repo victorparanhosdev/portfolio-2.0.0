@@ -4,6 +4,8 @@ import { links } from '../Header';
 import { Link } from 'react-scroll';
 import useMedia from 'use-media'
 import {motion} from 'framer-motion'
+import { useTranslations } from "next-intl";
+
 
 interface PopoverProps extends ComponentProps<'button'>{
     children: ReactNode;
@@ -16,7 +18,7 @@ interface PopoverProps extends ComponentProps<'button'>{
       const [isOpen, setOpen] = useState(false);
       const isMedia = useMedia({minWidth: '768px'})
       const [activeSection, setActiveSection] = useState('home');
-
+      const {t} = useTranslations("Header")
       function getBooleanOpen() {
         const newOpenState = !isOpen;
         setOpen(newOpenState);
@@ -46,7 +48,7 @@ interface PopoverProps extends ComponentProps<'button'>{
         <ul className="grid text-md ">
                     {links.map((item) => {
                         return (
-                            <li key={item.title}><Link activeClass="active" className={`block relative transition-colors cursor-pointer py-2 px-4 text-lg ${activeSection === item.link ? 'dark:text-gray-dark-400 text-blue-light-200' : 'dark:hover:text-gray-dark-400 hover:text-blue-light-200'}`} onSetActive={setActiveSection} to={item.link} onClick={(getBooleanOpen)} spy={true} smooth={true} duration={500}>{item.title}</Link></li>
+                            <li key={item.title}><Link activeClass="active" className={`block relative transition-colors cursor-pointer py-2 px-4 text-lg ${activeSection === item.link ? 'dark:text-gray-dark-400 text-blue-light-200' : 'dark:hover:text-gray-dark-400 hover:text-blue-light-200'}`} onSetActive={setActiveSection} to={item.link} onClick={(getBooleanOpen)} spy={true} smooth={true} duration={500}>{t(item.title)}</Link></li>
                         )
                     })}
                 </ul>
