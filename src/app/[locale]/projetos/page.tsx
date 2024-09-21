@@ -132,7 +132,7 @@ export default function AllProjetos() {
                             cursor: 'bg-blue-light-200  dark:bg-blue-dark-100 dark:text-gray-dark-500',
 
                             
-                        }} size='lg' showControls showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
+                        }} showControls showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
                     </div>
                 }
 
