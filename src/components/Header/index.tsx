@@ -6,44 +6,36 @@ import Logo from "../../../public/logo";
 import { SwitchTheme } from "../Switch";
 import { useTheme } from "next-themes";
 import { motion } from 'framer-motion';
-import { usePathname, useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Translate } from "@phosphor-icons/react/dist/ssr";
+import { PopoverNextUI } from "../PopoverNextUI";
+
 
 export const links = [
-    { title: "Inicio", link: "home" },
-    { title: "Sobre mim", link: "about" },
-    { title: "Experiências", link: "experience" },
-    { title: "Habilidades", link: "skills" },
-    { title: "Projetos", link: "projects" },
+    { title: "home", link: "home" },
+    { title: "about", link: "about" },
+    { title: "experience", link: "experience" },
+    { title: "skills", link: "skills" },
+    { title: "projects", link: "projects" },
 ];
 
-const BR_FLAG_URL = "https://purecatamphetamine.github.io/country-flag-icons/3x2/BR.svg";
-const US_FLAG_URL = "https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg";
-
 export const Header = () => {
+
+    const t = useTranslations('Header');
     const [isOpen, setOpen] = useState(false);
     const [darkOrLight, setDarkOrLight] = useState(true);
     const [activeSection, setActiveSection] = useState('home');
     const { setTheme, theme } = useTheme();
-    const { replace } = useRouter();
-    const path = usePathname();
+
     
-    const initialLanguage = path.includes('/en') ? US_FLAG_URL : BR_FLAG_URL;
-    const [language, setLanguage] = useState(initialLanguage);
+
 
     useEffect(() => {
         const themeLocalStorage = localStorage.getItem('theme');
         setDarkOrLight(themeLocalStorage !== 'light');
     }, []);
 
-    const toggleLanguage = () => {
-        setLanguage(prev => {
-            const newLanguage = prev === BR_FLAG_URL ? US_FLAG_URL : BR_FLAG_URL;
-            const newPath = newLanguage === US_FLAG_URL ? '/en' : '/pt';
-            replace(newPath, {scroll: false});
-            return newLanguage;
-        });
-    };
-
+   
     return (
         <header className="w-full fixed top-0 left-0 right-0 dark:bg-gray-dark-100 backdrop-blur-xl z-50 flex items-center min-h-[70px] shadow bg-gray-light-100">
             <nav className="flex items-center justify-between container-personalizado">
@@ -64,7 +56,7 @@ export const Header = () => {
                                     duration={500} 
                                     onSetActive={setActiveSection}
                                 >
-                                    {item.title}
+                                    {t(item.title)}
                                     {activeSection === item.link && (
                                         <motion.div
                                             layoutId="activeTab2"
@@ -77,10 +69,10 @@ export const Header = () => {
                         ))}
                     </ul>
 
-                    <div className="order-1 md:mr-6 flex items-center gap-5">
-                        <button onClick={toggleLanguage}>
-                            <img src={language} className="h-6 w-6" alt="Country Flag" />
-                        </button>
+                    <div className="order-1 md:mr-6 flex items-center gap-3">
+
+                        <PopoverNextUI><Translate size={32} /></PopoverNextUI>
+
                         <SwitchTheme 
                             checked={darkOrLight} 
                             onCheckedChange={setDarkOrLight} 

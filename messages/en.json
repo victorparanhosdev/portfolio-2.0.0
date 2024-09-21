@@ -1,7 +1,71 @@
 {
-    "HomePage": {
-      "h1": "Hi, I am",
-      "p": "FullStack Developer",
-      "p2": "Bachelor in Systems Analysis and Development"
-    }
+  "HomePage": {
+    "h1": "Hi, I'm",
+    "p": "FullStack Developer",
+    "p2": "Graduated in Analysis and Systems Development"
+  },
+  "Header": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "About": {
+    "h1": "About Me",
+    "p": "I am",
+    "p2": "graduated in Analysis and Systems Development from UNINTER, with a passion for technology and innovation. I have",
+    "p3": "solid knowledge in front-end and back-end development",
+    "p4": "working with JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML, and CSS, acquired through courses and continuous study. Currently, I am",
+    "p5": "Junior Developer",
+    "p6": "at Stefanini, and I have",
+    "p7": "10 years of experience",
+    "p8": "as an IT technician at Dires, as well as an internship in technical support at Vtrina. I am always looking for new challenges and learning opportunities, and I enjoy collaborating on projects that have a real impact.",
+    "p9": "Want to chat? Feel free to get in touch:",
+    "button": "Download Resume"
+  },
+  "Experience": {
+    "h1": "Experience",
+    "stefanini": "Junior Developer",
+    "stefaniniData": "June 2024 - Present",
+    "stefaniniLocal": "Hybrid",
+    "stefaniniLi": "Responsible for developing the new State System for Environmental Information and Water Resources (SEIA).",
+    "stefaniniLi2": "Implementation of new features and bug fixes.",
+    "stefaniniLi3": "Teamwork, contributing ideas and improvements to the system.",
+    "vtrina": "Technical Support Intern",
+    "vtrinaData": "January 2024 - June 2024",
+    "vtrinaLocal": "Home Office",
+    "vtrinaLi": "Identify and diagnose technical problems seeking solutions.",
+    "vtrinaLi2": "Assist the customer in resolving issues.",
+    "vtrinaLi3": "Provide technical support to resolve customer issues.",
+    "dires": "IT Technician",
+    "diresData": "May 2014 - May 2024",
+    "diresLocal": "On-site",
+    "diresLi": "Responsible for supporting and maintaining health programs, always keeping them up to date.",
+    "diresLi2": "Installation and repair of health programs.",
+    "diresLi3": "Consolidate data information from municipalities in the region for the Ministry of Health.",
+    "diresLi4": "Maintenance of computers and network.",
+    "diresLi5": "Support to employees."
+  },
+  "Skills": {
+    "h1": "Skills",
+    "h2": "Here you will find my main skills where I have the most knowledge and experience. However, I am always seeking new learning opportunities, continuously updating myself and exploring new technologies."
+  },
+  "Projects": {
+    "h1": "Projects",
+    "link": "More Projects..."
+  },
+  "Card": {
+    "techs": "Technologies used in the project:",
+    "buttonview": "View",
+    "buttoncode": "Code"
+  },
+  "AllProjects": {
+    "h1": "All Projects",
+    "back": "Back",
+    "search": "Search by name:",
+    "page1": "Page",
+    "page2": "of",
+    "notfound": "No repositories found."
   }
+}

@@ -3,5 +3,70 @@
     "h1": "Olá, eu sou",
     "p": "Desenvolvedor FullStack",
     "p2": "Graduado em Ánalise e Desenvolvimento de Sistemas"
+  },
+  "Header": {
+    "home": "Início",
+    "about": "Sobre mim",
+    "experience": "Experiências",
+    "skills": "Habilidades",
+    "projects": "Projetos"
+  },
+
+  "About": {
+    "h1": "Sobre mim",
+    "p": "Sou",
+    "p2": "formado em Análise e Desenvolvimento de Sistemas pela UNINTER, com uma paixão por tecnologia e inovação. Tenho",
+    "p3": "conhecimento sólido em desenvolvimento front-end e back-end",
+    "p4": "trabalhando com JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML e CSS, adquiridos por meio de cursos e estudos contínuos. Atualmente, sou",
+    "p5": "Desenvolvedor Jr.",
+    "p6": "na Stefanini, e conto com",
+    "p7": "10 anos de experiência",
+    "p8": "como técnico de informática na Dires, além de um estágio em suporte técnico na Vtrina. Estou sempre em busca de novos desafios e aprendizado, e gosto de colaborar em projetos que trazem impacto real.",
+    "p9": "Quer bater um papo? Fique à vontade para entrar em contato:",
+    "button": "Baixar currículo"
+  },
+  "Experience": {
+    "h1": "Experiências",
+    "stefanini": "Desenvolvedor Júnior",
+    "stefaniniData": "Junho 2024 - Atual",
+    "stefaniniLocal": "Híbrido",
+    "stefaniniLi": "Responsável pelo desenvolvimento do novo Sistema Estadual de Informações Ambientais e Recursos Hídricos (SEIA).",
+    "stefaniniLi2": "Implementação de novas funcionalidades e correção de bugs.",
+    "stefaniniLi3": "Trabalho em equipe, contribuindo com ideias e melhorias para o sistema.",
+    "vtrina": "Estagiário de Suporte Técnico",
+    "vtrinaData": "Janeiro 2024 - Junho 2024",
+    "vtrinaLocal": "Home Office",
+    "vtrinaLi": "Identificar e diagnosticar problemas técnicos buscando soluções.",
+    "vtrinaLi2": "Auxiliar o cliente na resolução de problemas.",
+    "vtrinaLi3": "Prestar suporte técnico para resolver questões do cliente.",
+    "dires": "Técnico de Informática",
+    "diresData": "Maio 2014 - Maio 2024",
+    "diresLocal": "Presencial",
+    "diresLi": "Responsável por dar suporte e manutenção nos programas de saúde, mantendo sempre atualizados.",
+    "diresLi2": "Instalação e reparos de programas de saúde.",
+    "diresLi3": "Consolidar as informações de dados dos municípios da região para o Ministério da Saúde.",
+    "diresLi4": "Manutenção de computadores e rede.",
+    "diresLi5": "Suporte a colaboradores."
+  },
+  "Skills": {
+    "h1": "Habilidades",
+    "h2": "Aqui você encontra minhas principais habilidades na qual tenho maior conhecimento e experiência. No entanto, estou sempre em busca de novos aprendizados constantemente, me atualizando e explorando novas tecnologias."
+  },
+  "Projects": {
+    "h1": "Projetos",
+    "link": "Mais Projetos..."
+  },
+  "Card": {
+    "techs": "Tecnologias usadas no projeto:",
+    "buttonview": "Visualizar",
+    "buttoncode": "Código"
+  },
+  "AllProjects": {
+    "h1": "Todos os projetos",
+    "back": "Voltar",
+    "search": "Buscar por nome:",
+    "page1": "Página",
+    "page2": "de",
+    "notfound": "Nenhum repositório encontrado."
   }
 }

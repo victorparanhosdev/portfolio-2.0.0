@@ -8,17 +8,19 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-coverflow';
 import './stylesSwiper.css'
+import { useTranslations } from "next-intl";
 
 
 export const Skills = () => {
     const isMedia = useMedia({ minWidth: '835px' })
+    const t = useTranslations('Skills');
 
     return (
         <Element name="skills" className="element">
             <section data-aos="fade-up" className="container-personalizado py-32">
-                <h1 className="text-3xl mb-6  dark:text-gray-dark-400 font-extrabold text-blue-light-400">Habilidades</h1>
+                <h1 className="text-3xl mb-6  dark:text-gray-dark-400 font-extrabold text-blue-light-400">{t("h1")}</h1>
 
-                    <h1 className="text-justify  mb-12">Aqui você encontra minhas principais habilidades na qual tenho maior conhecimento e experiência. No entanto, estou sempre em busca de novos aprendizados constantemente, me atualizando e explorando novas tecnologias.</h1>
+                    <h1 className="text-justify  mb-12">{t("h2")}</h1>
  
                 {!isMedia ?
                     <Swiper

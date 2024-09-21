@@ -3,10 +3,10 @@
 export const SkeletonAllProjects = () => {
     return (
         <div className="grid grid-cols-allprojects gap-4">
-            {Array.from({ length: 8 }).map((_, index) => {
+            {Array.from({ length: 12 }).map((_, index) => {
                 return (
                     <div key={index}
-                        className={`shadow-md transition-shadow duration-200 hover:shadow-[#2c96df78] dark:hover:shadow-gray-dark-200 border p-3 flex flex-col rounded-xl dark:bg-gray-dark-100 min-h-[120px] dark:border-0 bg-[#f0f6ff47] border-[#2c96df78] animate-pulse`}
+                        className={`shadow-md transition-shadow duration-200 hover:shadow-[#2c96df78] dark:hover:shadow-gray-dark-200 border  p-3 flex flex-col rounded-xl dark:bg-gray-dark-100 h-[162px] dark:border-0 bg-[#f0f6ff47] border-[#2c96df78] animate-pulse`}
                     >
                         <div className="flex items-center gap-3 mb-3">
                             <div className="w-5 h-5 bg-gray-300 dark:bg-gray-dark-500 rounded-full animate-pulse"></div>

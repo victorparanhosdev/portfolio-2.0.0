@@ -9,6 +9,7 @@ import { GitHubRepo } from "@/types/GithubTypes";
 import { SmileySad } from "@phosphor-icons/react/dist/ssr";
 import { useDebouncedCallback } from 'use-debounce';
 import { Pagination } from '@nextui-org/pagination';
+import { useTranslations } from 'next-intl';
 
 interface GitHubSearchResponse {
     items: GitHubRepo[];
@@ -21,8 +22,9 @@ export default function AllProjetos() {
     const [loading, setLoading] = useState<boolean>(true);
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [querySearch, setquerySearch] = useState<string>('');
+    const t = useTranslations('AllProjects');
 
-    const perPage = 8
+    const perPage = 12
     const TotalPages =  Math.ceil(dataRepos?.total_count ? dataRepos?.total_count / perPage : 1 )
 
     const fetchProjects = async (query: string = '', page: number = 1) => {
@@ -80,7 +82,7 @@ export default function AllProjetos() {
         <main className="bg-white text-blue-light-100 dark:bg-gray-dark-500 dark:text-gray-dark-300 min-h-screen">
             <section className="py-16 container-personalizado">
                 <h1 className="text-center text-3xl mb-8 text-blue-light-400 dark:text-gray-dark-400 font-extrabold">
-                    Todos os projetos
+                    {t("h1")}
                 </h1>
 
                 <div className="flex items-center w-full gap-2 sm:gap-5 mb-7">
@@ -89,11 +91,11 @@ export default function AllProjetos() {
                         href="/"
                         className="p-4 flex items-center gap-3 text-blue-light-200 dark:text-gray-dark-400 opacity-80 hover:opacity-100"
                     >
-                        <FaArrowLeft /> Voltar
+                        <FaArrowLeft />{t("back")}
                     </Link>
 
                     <form onSubmit={handleSubmit} className="flex-1 relative">
-                        <label htmlFor="search" className="sr-only">Buscar por nome:</label>
+                        <label htmlFor="search" className="sr-only">{t("search")}</label>
                         <input
                             type="text"
                             placeholder="Digite o nome do projeto"
@@ -108,7 +110,7 @@ export default function AllProjetos() {
                     </form>
                 </div>
             {loading ? <SkeletonTotalPages />  : (dataRepos && dataRepos.items.length > 0) && <span className="flex justify-end mb-4 text-blue-light-400 dark:text-gray-dark-400">
-                    Página {currentPage} de {TotalPages}
+                {t("page1")} {currentPage} {t("page2")} {TotalPages}
                 </span>}
                 <div className="grid grid-cols-allprojects gap-4">
                     {loading ? (
@@ -120,19 +122,20 @@ export default function AllProjetos() {
                     ) : (
                         <div className="flex flex-wrap justify-center items-center gap-3 text-blue-light-200 dark:text-gray-dark-300">
                             <p className="text-center text-base sm:text-lg md:text-xl align-baseline">
-                                Nenhum repositório encontrado.
+                                {t("notfound")}
                             </p>
                             <SmileySad size={28} weight="light" />
                         </div>
                     )}
                 </div>
                 {(dataRepos && dataRepos?.items.length > 0) && (TotalPages > 1) &&
-                    <div className='mt-8 flex justify-center max-[480px]:max-w-[320px]'>
+                    <div className='mt-8 flex justify-center'>
                         <Pagination classNames={{
-                            cursor: 'bg-blue-light-200  dark:bg-blue-dark-100 dark:text-gray-dark-500',
-
-                            
-                        }} showControls size="lg" showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
+                            cursor: 'bg-blue-light-200  dark:bg-blue-dark-100 dark:text-gray-dark-500',                            
+                        }} showControls size="lg" showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage}       
+                        siblings={0} 
+                        boundaries={1}    
+                        />
                     </div>
                 }
 

@@ -65,7 +65,7 @@ const config: Config = {
       },
       gridTemplateColumns:{
         projects: 'repeat(auto-fit, minmax(340px, 1fr))',
-        skills: 'repeat(auto-fit, minmax(120px, 1fr))',
+        skills: 'repeat(auto-fit, minmax(135px, 1fr))',
         allprojects: 'repeat(auto-fit, minmax(250px, 1fr))',
       },
       keyframes: {

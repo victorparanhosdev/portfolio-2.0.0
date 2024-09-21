@@ -3,11 +3,12 @@ import * as Tabs from '@radix-ui/react-tabs';
 import { TabItem } from './TabItem';
 import { AnimatePresence, motion } from 'framer-motion';
 import useMedia from 'use-media';
+import { useTranslations } from 'next-intl';
 
 export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
   const [currentTab, setCurrentTab] = useState<string>('stefanini');
   const isMd = useMedia({ minWidth: '768px' });
-
+  const t = useTranslations('Experience');
   return (
     <Tabs.Root
       value={currentTab}
@@ -32,53 +33,59 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
           <Tabs.Content value="stefanini">
             <div className="flex items-center justify-between gap-1 sm:flex-row flex-col sm:mb-8 md:mb-0">
               <h1 className="font-medium text-xl sm:text-2xl dark:text-gray-dark-400 text-blue-light-100">
-                Desenvolvedor Júnior
+                {t('stefanini')}
               </h1>
-              <span className="dark:text-gray-dark-400 text-blue-light-100">Junho 2024 - Atual</span>
+              <span className="dark:text-gray-dark-400 text-blue-light-100">{t('stefaniniData')}</span>
             </div>
             <div className='mt-6 mb-8'>
-              <span className="dark:text-blue-dark-100 text-md font-medium  text-blue-light-200 mr-1.5">Stefanini</span>  <span className='text-xs'>(Hibrido - Salvador/BA)</span>
+              <span className="dark:text-blue-dark-100 text-md font-medium text-blue-light-200 mr-1.5">Stefanini</span>
+              <span className='text-xs'>({t('stefaniniLocal')} - Salvador/BA)</span>
             </div>
             <ul className="list-disc list-inside">
-              <li>Responsável pelo desenvolvimento do novo Sistema Estadual de Informações Ambientais e Recursos Hídricos (SEIA).</li>
-              <li>Implementação de novas funcionalidades e correção de bugs.</li>
-              <li>Trabalho em equipe, contribuindo com ideias e melhorias para o sistema.</li>
+              <li>{t("stefaniniLi")}</li>
+              <li>{t("stefaniniLi2")}</li>
+              <li>{t("stefaniniLi3")}</li>
             </ul>
           </Tabs.Content>
+
           <Tabs.Content value="vtrina">
-            <div className="flex items-center sm:flex-row flex-col justify-between gap-1 sm:mb-8 md:mb-0">
+            <div className="flex items-center justify-between gap-1 sm:flex-row flex-col sm:mb-8 md:mb-0">
               <h1 className="font-medium text-xl sm:text-2xl dark:text-gray-dark-400 text-blue-light-100">
-                Estagiário de Suporte Técnico
+                {t('vtrina')}
               </h1>
-              <span className="dark:text-gray-dark-400 text-blue-light-100">Janeiro 2024 - Junho 2024</span>
+              <span className="dark:text-gray-dark-400 text-blue-light-100">{t('vtrinaData')}</span>
             </div>
             <div className='mt-6 mb-8'>
-              <span className="dark:text-blue-dark-100 text-md font-medium  text-blue-light-200 mr-1.5">Vtrina</span>  <span className='text-xs'>(Home Office - Curitiba/PR)</span>
+              <span className="dark:text-blue-dark-100 text-md font-medium text-blue-light-200 mr-1.5">Vtrina</span>
+              <span className='text-xs'>({t('vtrinaLocal')} - Curitiba/PR)</span>
             </div>
             <ul className="list-disc list-inside">
-              <li>Identificar e diagnosticar problemas técnicos buscando soluções.</li>
-              <li>Auxiliar o cliente na resolução de problemas.</li>
-              <li>Prestar suporte técnico para resolver questões do cliente.</li>
+              <li>{t("vtrinaLi")}</li>
+              <li>{t("vtrinaLi2")}</li>
+              <li>{t("vtrinaLi3")}</li>
             </ul>
           </Tabs.Content>
+
           <Tabs.Content value="dires">
-            <div className="flex sm:flex-row flex-col items-center justify-between gap-1 sm:mb-8 md:mb-0">
+            <div className="flex items-center justify-between gap-1 sm:flex-row flex-col sm:mb-8 md:mb-0">
               <h1 className="font-medium text-xl sm:text-2xl dark:text-gray-dark-400 text-blue-light-100">
-                Técnico de Informática
+                {t('dires')}
               </h1>
-              <span className="dark:text-gray-dark-400 text-blue-light-100">Maio 2014 - Maio 2024</span>
+              <span className="dark:text-gray-dark-400 text-blue-light-100">{t('diresData')}</span>
             </div>
             <div className='mt-6 mb-8'>
-              <span className="dark:text-blue-dark-100 text-md font-medium  text-blue-light-200 mr-1.5">Dires</span>  <span className='text-xs'>(Presencial - Cruz das Almas/BA)</span>
+              <span className="dark:text-blue-dark-100 text-md font-medium text-blue-light-200 mr-1.5">Dires</span>
+              <span className='text-xs'>({t('diresLocal')} - Cruz das Almas/BA)</span>
             </div>
             <ul className="list-disc list-inside">
-              <li>Responsável por dar suporte e manutenção nos programas de saúde, mantendo sempre atualizados.</li>
-              <li>Instalação e reparos de programas de saúde.</li>
-              <li>Consolidar as informações de dados dos municípios da região para o Ministério da Saúde.</li>
-              <li>Manutenção de computadores e rede.</li>
-              <li>Suporte a colaboradores.</li>
+              <li>{t("diresLi")}</li>
+              <li>{t("diresLi2")}</li>
+              <li>{t("diresLi3")}</li>
+              <li>{t("diresLi4")}</li>
+              <li>{t("diresLi5")}</li>
             </ul>
           </Tabs.Content>
+
         </motion.div>
       </AnimatePresence>
     </Tabs.Root>

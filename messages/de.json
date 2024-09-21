@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "h1": "Hallo, ich bin",
+    "p": "FullStack-Entwickler",
+    "p2": "Absolvent der Analyse und Entwicklung von Systemen"
+  },
+  "Header": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "experience": "Erfahrungen",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte"
+  },
+  "About": {
+    "h1": "Über mich",
+    "p": "Ich bin",
+    "p2": "Absolvent der Analyse und Entwicklung von Systemen an der UNINTER, mit einer Leidenschaft für Technologie und Innovation. Ich habe",
+    "p3": "ein fundiertes Wissen in der Front-End- und Back-End-Entwicklung",
+    "p4": "mit JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML und CSS, erworben durch Kurse und kontinuierliches Lernen. Derzeit bin ich",
+    "p5": "Junior-Entwickler",
+    "p6": "bei Stefanini und habe",
+    "p7": "10 Jahre Erfahrung",
+    "p8": "als IT-Techniker bei Dires sowie ein Praktikum im technischen Support bei Vtrina. Ich bin immer auf der Suche nach neuen Herausforderungen und Lernmöglichkeiten und arbeite gerne an Projekten, die einen realen Einfluss haben.",
+    "p9": "Möchten Sie plaudern? Zögern Sie nicht, mich zu kontaktieren:",
+    "button": "Lebenslauf herunterladen"
+  },
+  "Experience": {
+    "h1": "Erfahrungen",
+    "stefanini": "Junior-Entwickler",
+    "stefaniniData": "Juni 2024 - Aktuell",
+    "stefaniniLocal": "Hybrid",
+    "stefaniniLi": "Verantwortlich für die Entwicklung des neuen Staatlichen Systems für Umweltinformationen und Wasserressourcen (SEIA).",
+    "stefaniniLi2": "Implementierung neuer Funktionen und Behebung von Fehlern.",
+    "stefaniniLi3": "Teamarbeit, wobei Ideen und Verbesserungen für das System beigetragen werden.",
+    "vtrina": "Praktikant im technischen Support",
+    "vtrinaData": "Januar 2024 - Juni 2024",
+    "vtrinaLocal": "Home Office",
+    "vtrinaLi": "Identifizierung und Diagnose technischer Probleme zur Lösung.",
+    "vtrinaLi2": "Kunden bei der Lösung von Problemen unterstützen.",
+    "vtrinaLi3": "Technischen Support zur Behebung von Kundenanfragen bereitstellen.",
+    "dires": "IT-Techniker",
+    "diresData": "Mai 2014 - Mai 2024",
+    "diresLocal": "Präsenz",
+    "diresLi": "Verantwortlich für Unterstützung und Wartung von Gesundheitsprogrammen, stets auf dem neuesten Stand.",
+    "diresLi2": "Installation und Reparatur von Gesundheitsprogrammen.",
+    "diresLi3": "Konsolidierung der Dateninformationen der Gemeinden der Region für das Gesundheitsministerium.",
+    "diresLi4": "Wartung von Computern und Netzwerken.",
+    "diresLi5": "Support für Mitarbeiter."
+  },
+  "Skills": {
+    "h1": "Fähigkeiten",
+    "h2": "Hier finden Sie meine wichtigsten Fähigkeiten, in denen ich das größte Wissen und Erfahrung habe. Ich bin jedoch immer auf der Suche nach neuen Lernmöglichkeiten und erkunde neue Technologien."
+  },
+  "Projects": {
+    "h1": "Projekte",
+    "link": "Weitere Projekte..."
+  },
+  "Card": {
+    "techs": "Technologien, die im Projekt verwendet werden:",
+    "buttonview": "Ansehen",
+    "buttoncode": "Code"
+  },
+  "AllProjects": {
+    "h1": "Alle Projekte",
+    "back": "Zurück",
+    "search": "Nach Namen suchen:",
+    "page1": "Seite",
+    "page2": "von",
+    "notfound": "Kein Repository gefunden."
+  }
+}
