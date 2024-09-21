@@ -74,7 +74,7 @@ export default function AllProjetos() {
     }, 600);
 
     useEffect(() => {
-        fetchProjects(querySearch);
+        fetchProjects(querySearch,currentPage);
     }, [currentPage]);
 
 
