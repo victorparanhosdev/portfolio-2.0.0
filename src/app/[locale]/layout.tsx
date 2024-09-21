@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Providers } from "@/Providers/NextUI";
+import { Providers } from "@/providers/NextUI";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages, unstable_setRequestLocale} from 'next-intl/server';
 import { routing } from "@/i18n/routing";
