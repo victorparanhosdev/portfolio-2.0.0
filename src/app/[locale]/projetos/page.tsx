@@ -127,7 +127,7 @@ export default function AllProjetos() {
                     )}
                 </div>
                 {(dataRepos && dataRepos?.items.length > 0) && (TotalPages > 1) &&
-                    <div className='mt-8 flex justify-center'>
+                    <div className='mt-8 flex justify-center max-[480px]:max-w-[320px]'>
                         <Pagination classNames={{
                             cursor: 'bg-blue-light-200  dark:bg-blue-dark-100 dark:text-gray-dark-500',
 
