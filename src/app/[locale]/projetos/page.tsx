@@ -22,7 +22,7 @@ export default function AllProjetos() {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [querySearch, setquerySearch] = useState<string>('');
 
-    const perPage = 10;
+    const perPage = 8
     const TotalPages =  Math.ceil(dataRepos?.total_count ? dataRepos?.total_count / perPage : 1 )
 
     const fetchProjects = async (query: string = '', page: number = 1) => {
