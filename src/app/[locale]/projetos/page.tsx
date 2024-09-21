@@ -8,7 +8,7 @@ import { CardAllProjects } from "@/components/CardAllProjects";
 import { GitHubRepo } from "@/types/GithubTypes";
 import { SmileySad } from "@phosphor-icons/react/dist/ssr";
 import { useDebouncedCallback } from 'use-debounce';
-import { Pagination } from '@nextui-org/react';
+import { Pagination } from '@nextui-org/pagination';
 
 interface GitHubSearchResponse {
     items: GitHubRepo[];
@@ -132,7 +132,7 @@ export default function AllProjetos() {
                             cursor: 'bg-blue-light-200  dark:bg-blue-dark-100 dark:text-gray-dark-500',
 
                             
-                        }} showControls dotsJump={10} size="lg" showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
+                        }} showControls size="lg" showShadow page={currentPage} initialPage={1} radius='md' total={TotalPages} onChange={setCurrentPage} />
                     </div>
                 }
 
