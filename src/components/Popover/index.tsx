@@ -18,7 +18,7 @@ interface PopoverProps extends ComponentProps<'button'>{
       const [isOpen, setOpen] = useState(false);
       const isMedia = useMedia({minWidth: '768px'})
       const [activeSection, setActiveSection] = useState('home');
-      const {t} = useTranslations("Header")
+      const t = useTranslations("Header")
       function getBooleanOpen() {
         const newOpenState = !isOpen;
         setOpen(newOpenState);
