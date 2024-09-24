@@ -21,7 +21,7 @@ export const links = [
 ];
 
 export const Header = () => {
-    const isMedia = useMedia({minWidth: '768px'})
+    const isMedia = useMedia({ minWidth: '768px' })
     const t = useTranslations('Header');
     const [isOpen, setOpen] = useState(false);
     const [darkOrLight, setDarkOrLight] = useState(true);
@@ -34,13 +34,20 @@ export const Header = () => {
         setDarkOrLight(themeLocalStorage !== 'light');
     }, []);
 
+    useEffect(() => {
+        if (!isMedia && isOpenPopover) {
+            setOpenPopover(false)
+        }
+
+    }, [isMedia]);
+
 
     return (
         <header className="w-full fixed top-0 left-0 right-0 dark:bg-gray-dark-100 backdrop-blur-xl z-50 flex items-center min-h-[70px] shadow bg-gray-light-100">
             <nav className="flex items-center justify-between container-personalizado">
                 <Logo className="h-12 w-12 fill-blue-light-200 dark:fill-gray-dark-400 dark:stroke-gray-dark-450" />
                 <menu className="flex items-center gap-2 md:gap-8 min-[800px]:gap-10 min-[900px]:gap-14">
-                    <PopoverMenu className="order-2 md:hidden text-dark-light-100 hover:text-blue-light-200 dark:text-gray-dark-450 transition-all" getOpen={setOpen}>
+                    <PopoverMenu className="order-2 md:hidden text-dark-light-100 hover:text-blue-light-200 dark:text-gray-dark-450 transition-all" isOpenHambuguer={isOpen} getOpen={setOpen}>
                         <Hamburger size={28} toggled={isOpen} toggle={setOpen} />
                     </PopoverMenu>
 

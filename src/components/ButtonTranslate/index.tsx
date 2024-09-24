@@ -34,8 +34,8 @@ export function ButtonTranslate() {
     return (
         <Popover placement="bottom" showArrow={true} isTriggerDisabled={isPending}>
             <PopoverTrigger>
-                <Button className="bg-transparent px-1.5 min-w-max disabled:text-opacity-60" disabled={isPending}>
-                    <Translate size={32} />
+                <Button className="bg-transparent px-1.5 min-w-max disabled:text-opacity-60 text-blue-light-400 dark:text-gray-dark-400" disabled={isPending}>
+                    <Translate size={32} className="text-current"/>
                 </Button>
             </PopoverTrigger>
             <PopoverContent>
