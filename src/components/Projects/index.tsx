@@ -2,17 +2,14 @@ import { useEffect, useState } from 'react';
 import { Element } from "react-scroll";
 import { Card } from "../Card";
 import { MdOutlineDoubleArrow } from "react-icons/md";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 import { GitHubRepo } from "@/types/GithubTypes";
 import { SkeletonProjects } from './SkeletonProjects';
-
-import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 export const Projects = () => {
     const [projects, setProjects] = useState<GitHubRepo[]>([]);
     const [loading, setLoading] = useState<boolean>(true)
-    const path = usePathname()
     const t = useTranslations('Projects');
 
 
@@ -50,7 +47,7 @@ export const Projects = () => {
                     <Card projetos={repo} data-aos="flip-left" key={repo.id} />
                 ))}
                 </div>
-                <Link href={`${path}/projetos`} className="transition mt-6 ml-auto py-6 px-8 text-lg sm:text-xl font-bold dark:text-gray-dark-300 dark:hover:text-gray-dark-400 cursor-pointer flex gap-3 items-center hover:text-blue-light-200 text-blue-light-100">
+                <Link href="/projetos" className="transition mt-6 ml-auto py-6 px-8 text-lg sm:text-xl font-bold dark:text-gray-dark-300 dark:hover:text-gray-dark-400 cursor-pointer flex gap-3 items-center hover:text-blue-light-200 text-blue-light-100">
                     <MdOutlineDoubleArrow className="animate-arrowRight overflow-hidden text-current text-xl lg:text-base" />{t("link")}
                 </Link>
             </section>

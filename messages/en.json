@@ -1,23 +1,24 @@
 {
   "HomePage": {
-    "h1": "Hi, I'm",
+    "h1": "Hello, I'm",
     "p": "FullStack Developer",
-    "p2": "Graduated in Analysis and Systems Development"
+    "p2": "Graduated in Systems Analysis and Development"
   },
   "Header": {
     "home": "Home",
     "about": "About Me",
     "experience": "Experience",
     "skills": "Skills",
-    "projects": "Projects"
+    "projects": "Projects",
+    "allprojects": "All Projects"
   },
   "About": {
     "h1": "About Me",
     "p": "I am",
-    "p2": "graduated in Analysis and Systems Development from UNINTER, with a passion for technology and innovation. I have",
+    "p2": "a graduate in Systems Analysis and Development from UNINTER, with a passion for technology and innovation. I have",
     "p3": "solid knowledge in front-end and back-end development",
-    "p4": "working with JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML, and CSS, acquired through courses and continuous study. Currently, I am",
-    "p5": "Junior Developer",
+    "p4": "working with JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML and CSS, acquired through courses and continuous studies. I'm currently",
+    "p5": "a Jr. Developer",
     "p6": "at Stefanini, and I have",
     "p7": "10 years of experience",
     "p8": "as an IT technician at Dires, as well as an internship in technical support at Vtrina. I am always looking for new challenges and learning opportunities, and I enjoy collaborating on projects that have a real impact.",
@@ -35,14 +36,14 @@
     "vtrina": "Technical Support Intern",
     "vtrinaData": "January 2024 - June 2024",
     "vtrinaLocal": "Home Office",
-    "vtrinaLi": "Identify and diagnose technical problems seeking solutions.",
-    "vtrinaLi2": "Assist the customer in resolving issues.",
+    "vtrinaLi": "Identify and report  technical problems seeking solutions.",
+    "vtrinaLi2": "Assist customers in resolving issues.",
     "vtrinaLi3": "Provide technical support to resolve customer issues.",
     "dires": "IT Technician",
     "diresData": "May 2014 - May 2024",
     "diresLocal": "On-site",
-    "diresLi": "Responsible for supporting and maintaining health programs, always keeping them up to date.",
-    "diresLi2": "Installation and repair of health programs.",
+    "diresLi": "Responsible for supporting and maintaining softwares, always keeping them up to date.",
+    "diresLi2": "Installation and repair of softwares/programs.",
     "diresLi3": "Consolidate data information from municipalities in the region for the Ministry of Health.",
     "diresLi4": "Maintenance of computers and network.",
     "diresLi5": "Support to employees."

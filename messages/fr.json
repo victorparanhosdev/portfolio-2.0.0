@@ -6,50 +6,51 @@
   },
   "Header": {
     "home": "Accueil",
-    "about": "À Propos de Moi",
+    "about": "À propos de moi",
     "experience": "Expériences",
     "skills": "Compétences",
-    "projects": "Projets"
+    "projects": "Projets",
+    "allprojects": "Tous les Projets"
   },
   "About": {
-    "h1": "À Propos de Moi",
+    "h1": "À propos de moi",
     "p": "Je suis",
-    "p2": "diplômé en Analyse et Développement de Systèmes de UNINTER, avec une passion pour la technologie et l'innovation. J'ai",
-    "p3": "une solide connaissance en développement front-end et back-end",
+    "p2": "diplômé en Analyse et Développement de Systèmes de l'UNINTER, avec une passion pour la technologie et l'innovation. J'ai",
+    "p3": "une connaissance solide en développement front-end et back-end",
     "p4": "travaillant avec JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML et CSS, acquis grâce à des cours et des études continues. Actuellement, je suis",
-    "p5": "Développeur Junior",
+    "p5": "Développeur Jr.",
     "p6": "chez Stefanini, et j'ai",
     "p7": "10 ans d'expérience",
-    "p8": "comme technicien informatique chez Dires, ainsi qu'un stage en support technique chez Vtrina. Je suis toujours à la recherche de nouveaux défis et d'apprentissages, et j'aime collaborer sur des projets ayant un impact réel.",
+    "p8": "comme technicien informatique chez Dires, ainsi qu'un stage en support technique chez Vtrina. Je suis toujours à la recherche de nouveaux défis et d'opportunités d'apprentissage, et j'aime collaborer à des projets ayant un impact réel.",
     "p9": "Vous voulez discuter ? N'hésitez pas à me contacter :",
     "button": "Télécharger le CV"
   },
   "Experience": {
     "h1": "Expériences",
     "stefanini": "Développeur Junior",
-    "stefaniniData": "Juin 2024 - Actuel",
+    "stefaniniData": "Juin 2024 - Présent",
     "stefaniniLocal": "Hybride",
-    "stefaniniLi": "Responsable du développement du nouveau Système Étatique d'Information Environnementale et de Ressources en Eau (SEIA).",
-    "stefaniniLi2": "Mise en œuvre de nouvelles fonctionnalités et correction de bogues.",
-    "stefaniniLi3": "Travail en équipe, contribuant avec des idées et des améliorations pour le système.",
+    "stefaniniLi": "Responsable du développement du nouveau Système État d'Informations Environnementales et de Ressources en Eau (SEIA).",
+    "stefaniniLi2": "Implémentation de nouvelles fonctionnalités et correction de bugs.",
+    "stefaniniLi3": "Travail d'équipe, contribuant avec des idées et des améliorations pour le système.",
     "vtrina": "Stagiaire en Support Technique",
     "vtrinaData": "Janvier 2024 - Juin 2024",
-    "vtrinaLocal": "Home Office",
-    "vtrinaLi": "Identifier et diagnostiquer des problèmes techniques en cherchant des solutions.",
+    "vtrinaLocal": "Télétravail",
+    "vtrinaLi": "Identifier et diagnostiquer des problèmes techniques à la recherche de solutions.",
     "vtrinaLi2": "Aider le client à résoudre des problèmes.",
     "vtrinaLi3": "Fournir un support technique pour résoudre les questions du client.",
     "dires": "Technicien Informatique",
     "diresData": "Mai 2014 - Mai 2024",
-    "diresLocal": "Présentiel",
-    "diresLi": "Responsable du soutien et de la maintenance des programmes de santé, en les maintenant toujours à jour.",
-    "diresLi2": "Installation et réparation des programmes de santé.",
-    "diresLi3": "Consolider les informations sur les données des municipalités de la région pour le Ministère de la Santé.",
+    "diresLocal": "Sur site",
+    "diresLi": "Responsable du support et de la maintenance des logiciels de santé, toujours à jour.",
+    "diresLi2": "Installation et réparation des logiciels de santé.",
+    "diresLi3": "Consolider les informations des données des municipalités de la région pour le Ministère de la Santé.",
     "diresLi4": "Maintenance des ordinateurs et du réseau.",
-    "diresLi5": "Support aux collaborateurs."
+    "diresLi5": "Support aux employés."
   },
   "Skills": {
     "h1": "Compétences",
-    "h2": "Ici, vous trouverez mes principales compétences où j'ai le plus de connaissances et d'expérience. Cependant, je suis toujours à la recherche de nouveaux apprentissages, me tenant à jour et explorant de nouvelles technologies."
+    "h2": "Ici, vous trouverez mes principales compétences dans lesquelles j'ai le plus de connaissances et d'expérience. Cependant, je suis toujours à la recherche de nouvelles opportunités d'apprentissage, me tenant à jour et explorant de nouvelles technologies."
   },
   "Projects": {
     "h1": "Projets",
@@ -61,9 +62,9 @@
     "buttoncode": "Code"
   },
   "AllProjects": {
-    "h1": "Tous les Projets",
+    "h1": "Tous les projets",
     "back": "Retour",
-    "search": "Recherche par nom :",
+    "search": "Rechercher par nom :",
     "page1": "Page",
     "page2": "de",
     "notfound": "Aucun dépôt trouvé."

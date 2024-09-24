@@ -6,57 +6,58 @@
   },
   "Header": {
     "home": "Inicio",
-    "about": "Sobre Mí",
+    "about": "Sobre mí",
     "experience": "Experiencias",
     "skills": "Habilidades",
-    "projects": "Proyectos"
+    "projects": "Proyectos",
+    "allprojects": "Todos los Proyectos"
   },
   "About": {
-    "h1": "Sobre Mí",
+    "h1": "Sobre mí",
     "p": "Soy",
-    "p2": "graduado en Análisis y Desarrollo de Sistemas por UNINTER, con una pasión por la tecnología y la innovación. Tengo",
-    "p3": "un sólido conocimiento en desarrollo front-end y back-end",
+    "p2": "licenciado en Análisis y Desarrollo de Sistemas por UNINTER, con una pasión por la tecnología y la innovación. Tengo",
+    "p3": "conocimientos sólidos en desarrollo front-end y back-end",
     "p4": "trabajando con JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML y CSS, adquiridos a través de cursos y estudios continuos. Actualmente, soy",
     "p5": "Desarrollador Jr.",
     "p6": "en Stefanini, y tengo",
     "p7": "10 años de experiencia",
-    "p8": "como técnico de informática en Dires, además de una pasantía en soporte técnico en Vtrina. Siempre estoy en busca de nuevos desafíos y aprendizaje, y disfruto colaborar en proyectos que tienen un impacto real.",
+    "p8": "como técnico en informática en Dires, además de una pasantía en soporte técnico en Vtrina. Siempre estoy buscando nuevos desafíos y oportunidades de aprendizaje, y me gusta colaborar en proyectos que tienen un impacto real.",
     "p9": "¿Quieres charlar? No dudes en ponerte en contacto:",
     "button": "Descargar currículum"
   },
   "Experience": {
     "h1": "Experiencias",
-    "stefanini": "Desarrollador Júnior",
+    "stefanini": "Desarrollador Junior",
     "stefaniniData": "Junio 2024 - Actual",
     "stefaniniLocal": "Híbrido",
     "stefaniniLi": "Responsable del desarrollo del nuevo Sistema Estatal de Información Ambiental y Recursos Hídricos (SEIA).",
     "stefaniniLi2": "Implementación de nuevas funcionalidades y corrección de errores.",
     "stefaniniLi3": "Trabajo en equipo, contribuyendo con ideas y mejoras para el sistema.",
-    "vtrina": "Pasantía de Soporte Técnico",
+    "vtrina": "Pasantía en Soporte Técnico",
     "vtrinaData": "Enero 2024 - Junio 2024",
-    "vtrinaLocal": "Home Office",
+    "vtrinaLocal": "Trabajo desde casa",
     "vtrinaLi": "Identificar y diagnosticar problemas técnicos buscando soluciones.",
-    "vtrinaLi2": "Asistir al cliente en la resolución de problemas.",
-    "vtrinaLi3": "Prestar soporte técnico para resolver cuestiones del cliente.",
-    "dires": "Técnico de Informática",
+    "vtrinaLi2": "Ayudar al cliente a resolver problemas.",
+    "vtrinaLi3": "Proporcionar soporte técnico para resolver problemas del cliente.",
+    "dires": "Técnico en Informática",
     "diresData": "Mayo 2014 - Mayo 2024",
     "diresLocal": "Presencial",
     "diresLi": "Responsable de dar soporte y mantenimiento a los programas de salud, manteniéndolos siempre actualizados.",
     "diresLi2": "Instalación y reparación de programas de salud.",
     "diresLi3": "Consolidar la información de datos de los municipios de la región para el Ministerio de Salud.",
-    "diresLi4": "Mantenimiento de computadoras y red.",
+    "diresLi4": "Mantenimiento de computadoras y redes.",
     "diresLi5": "Soporte a colaboradores."
   },
   "Skills": {
     "h1": "Habilidades",
-    "h2": "Aquí encontrarás mis principales habilidades en las que tengo mayor conocimiento y experiencia. Sin embargo, siempre estoy en busca de nuevos aprendizajes, actualizándome y explorando nuevas tecnologías."
+    "h2": "Aquí encuentras mis principales habilidades en las que tengo mayor conocimiento y experiencia. Sin embargo, siempre estoy en busca de nuevos aprendizajes, actualizándome constantemente y explorando nuevas tecnologías."
   },
   "Projects": {
     "h1": "Proyectos",
     "link": "Más Proyectos..."
   },
   "Card": {
-    "techs": "Tecnologías utilizadas en el proyecto:",
+    "techs": "Tecnologías usadas en el proyecto:",
     "buttonview": "Ver",
     "buttoncode": "Código"
   },

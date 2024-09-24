@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import { MagnifyingGlass } from "@phosphor-icons/react";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 import { FaArrowLeft } from "react-icons/fa";
 import { SkeletonAllProjects, SkeletonTotalPages } from "./SkeletonAllProjects";
 import { CardAllProjects } from "@/components/CardAllProjects";

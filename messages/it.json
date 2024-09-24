@@ -5,23 +5,24 @@
     "p2": "Laureato in Analisi e Sviluppo di Sistemi"
   },
   "Header": {
-    "home": "Inizio",
-    "about": "Su di Me",
+    "home": "Home",
+    "about": "Chi sono",
     "experience": "Esperienze",
     "skills": "Competenze",
-    "projects": "Progetti"
+    "projects": "Progetti",
+    "allprojects": "Tutti i Progetti"
   },
   "About": {
-    "h1": "Su di Me",
+    "h1": "Chi sono",
     "p": "Sono",
     "p2": "laureato in Analisi e Sviluppo di Sistemi presso UNINTER, con una passione per la tecnologia e l'innovazione. Ho",
     "p3": "una solida conoscenza nello sviluppo front-end e back-end",
     "p4": "lavorando con JavaScript, React.js, Next.js, TypeScript, Node.js, Python, Java, SQL, HTML e CSS, acquisiti attraverso corsi e studi continui. Attualmente, sono",
-    "p5": "Sviluppatore Junior",
+    "p5": "Sviluppatore Jr.",
     "p6": "presso Stefanini, e ho",
     "p7": "10 anni di esperienza",
-    "p8": "come tecnico informatico presso Dires, oltre a uno stage in supporto tecnico presso Vtrina. Sono sempre alla ricerca di nuove sfide e di apprendimento, e mi piace collaborare a progetti che hanno un impatto reale.",
-    "p9": "Vuoi fare due chiacchiere? Non esitare a contattarmi:",
+    "p8": "come tecnico informatico presso Dires, oltre a uno stage nel supporto tecnico presso Vtrina. Cerco sempre nuove sfide e opportunità di apprendimento, e mi piace collaborare a progetti che hanno un impatto reale.",
+    "p9": "Vuoi fare due chiacchiere? Sentiti libero di contattarmi:",
     "button": "Scarica il curriculum"
   },
   "Experience": {
@@ -32,24 +33,24 @@
     "stefaniniLi": "Responsabile dello sviluppo del nuovo Sistema Statale di Informazioni Ambientali e Risorse Idriche (SEIA).",
     "stefaniniLi2": "Implementazione di nuove funzionalità e correzione di bug.",
     "stefaniniLi3": "Lavoro di squadra, contribuendo con idee e miglioramenti per il sistema.",
-    "vtrina": "Stagista in Supporto Tecnico",
+    "vtrina": "Stagista di Supporto Tecnico",
     "vtrinaData": "Gennaio 2024 - Giugno 2024",
     "vtrinaLocal": "Home Office",
     "vtrinaLi": "Identificare e diagnosticare problemi tecnici cercando soluzioni.",
-    "vtrinaLi2": "Assistere il cliente nella risoluzione di problemi.",
-    "vtrinaLi3": "Fornire supporto tecnico per risolvere questioni del cliente.",
+    "vtrinaLi2": "Assistere il cliente nella risoluzione dei problemi.",
+    "vtrinaLi3": "Fornire supporto tecnico per risolvere le questioni del cliente.",
     "dires": "Tecnico Informatico",
     "diresData": "Maggio 2014 - Maggio 2024",
-    "diresLocal": "Presenziale",
-    "diresLi": "Responsabile del supporto e della manutenzione dei programmi di salute, mantenendoli sempre aggiornati.",
-    "diresLi2": "Installazione e riparazione dei programmi di salute.",
-    "diresLi3": "Consolidare le informazioni sui dati dei comuni della regione per il Ministero della Salute.",
+    "diresLocal": "In loco",
+    "diresLi": "Responsabile del supporto e della manutenzione dei programmi sanitari, mantenendoli sempre aggiornati.",
+    "diresLi2": "Installazione e riparazione dei programmi sanitari.",
+    "diresLi3": "Consolidare le informazioni dei dati dei comuni della regione per il Ministero della Salute.",
     "diresLi4": "Manutenzione di computer e rete.",
     "diresLi5": "Supporto ai collaboratori."
   },
   "Skills": {
     "h1": "Competenze",
-    "h2": "Qui trovi le mie principali competenze in cui ho maggiore conoscenza ed esperienza. Tuttavia, sono sempre alla ricerca di nuovi apprendimenti, aggiornandomi ed esplorando nuove tecnologie."
+    "h2": "Qui trovi le mie principali competenze in cui ho maggiore conoscenza e esperienza. Tuttavia, sono sempre alla ricerca di nuove opportunità di apprendimento, aggiornandomi costantemente ed esplorando nuove tecnologie."
   },
   "Projects": {
     "h1": "Progetti",
