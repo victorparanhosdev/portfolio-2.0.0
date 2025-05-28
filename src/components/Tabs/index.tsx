@@ -47,6 +47,7 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               <li>{t("stefaniniLi3")}</li>
               <li>{t("stefaniniLi4")}</li>
               <li>{t("stefaniniLi5")}</li>
+              <li>{t("stefaniniLi6")}</li>
             </ul>
           </Tabs.Content>
 
