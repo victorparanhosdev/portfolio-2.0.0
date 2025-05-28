@@ -42,9 +42,11 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               <span className='text-xs'>({t('stefaniniLocal')} - Salvador/BA)</span>
             </div>
             <ul className="list-disc list-inside">
-              <li>{t("stefaniniLi")}</li>
+              <li>{t("stefaniniLi1")}</li>
               <li>{t("stefaniniLi2")}</li>
               <li>{t("stefaniniLi3")}</li>
+              <li>{t("stefaniniLi4")}</li>
+              <li>{t("stefaniniLi5")}</li>
             </ul>
           </Tabs.Content>
 
@@ -60,9 +62,10 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               <span className='text-xs'>({t('vtrinaLocal')} - Curitiba/PR)</span>
             </div>
             <ul className="list-disc list-inside">
-              <li>{t("vtrinaLi")}</li>
+              <li>{t("vtrinaLi1")}</li>
               <li>{t("vtrinaLi2")}</li>
               <li>{t("vtrinaLi3")}</li>
+              <li>{t("vtrinaLi4")}</li>
             </ul>
           </Tabs.Content>
 
@@ -78,11 +81,12 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               <span className='text-xs'>({t('diresLocal')} - Cruz das Almas/BA)</span>
             </div>
             <ul className="list-disc list-inside">
-              <li>{t("diresLi")}</li>
+              <li>{t("diresLi1")}</li>
               <li>{t("diresLi2")}</li>
               <li>{t("diresLi3")}</li>
               <li>{t("diresLi4")}</li>
               <li>{t("diresLi5")}</li>
+              <li>{t("diresLi6")}</li>
             </ul>
           </Tabs.Content>
 

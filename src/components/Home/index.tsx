@@ -33,7 +33,7 @@ export const Home = ()  => {
             <div className="text-lg min-h-14 w-full mb-1 max-w-[415px]">
 
             <Typewriter data-aos="fade-left"
-            words={[t('p'), t('p2')]}
+            words={[t('p'), t('p1'), t('p2')]}
             loop={false}
             cursor={true}
             cursorStyle='|'
