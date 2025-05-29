@@ -1,6 +1,6 @@
 ## 📝 Descrição do Projeto
 
-Este é um projeto pessoal que desenvolvi com o objetivo de demonstrar meus conhecimentos em desenvolvimento web, além de apresentar de forma organizada meus projetos pessoais e as tecnologias que venho utilizando.
+Este é um projeto pessoal que desenvolvi com o objetivo de demonstrar meus conhecimentos em desenvolvimento fron end, além de apresentar de forma organizada meus projetos pessoais e as tecnologias que venho utilizando.
 
 ## 📱 Layout da Aplicação
 

@@ -42,14 +42,13 @@ export const TabsNav = ({ ...props }: Tabs.TabsProps) => {
               <span className='text-xs'>({t('stefaniniLocal')} - Salvador/BA)</span>
             </div>
             <ul className="list-disc list-inside">
-              <li>{t("stefanini1")}</li>
-              <li>{t("stefanini2")}</li>
-              <li>{t("stefanini3")}</li>
-              <li>{t("stefanini4")}</li>
-              <li>{t("stefanini5")}</li>
-              <li>{t("stefanini6")}</li>
-              <li>{t("stefanini7")}</li>
-              <li>{t("stefanini8")}</li>
+              <li>{t("stefaniniLi1")}</li>
+              <li>{t("stefaniniLi2")}</li>
+              <li>{t("stefaniniLi3")}</li>
+              <li>{t("stefaniniLi4")}</li>
+              <li>{t("stefaniniLi5")}</li>
+              <li>{t("stefaniniLi6")}</li>
+              <li>{t("stefaniniLi7")}</li>
             </ul>
           </Tabs.Content>
 
